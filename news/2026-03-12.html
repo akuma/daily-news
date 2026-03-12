@@ -3,180 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>每日AI科技新闻 - 2026年3月12日</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-            min-height: 100vh;
-            padding: 20px;
-            color: #eee;
-        }
-        .container { max-width: 800px; margin: 0 auto; }
-        header {
-            text-align: center;
-            padding: 40px 0;
-            border-bottom: 1px solid rgba(255,255,255,0.1);
-            margin-bottom: 30px;
-        }
-        h1 {
-            font-size: 2.5em;
-            background: linear-gradient(90deg, #00d4ff, #7c3aed);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            margin-bottom: 10px;
-        }
-        .date { color: #888; font-size: 1.1em; }
-        .news-list { list-style: none; }
-        .news-item {
-            background: rgba(255,255,255,0.05);
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            border: 1px solid rgba(255,255,255,0.1);
-            transition: transform 0.2s, box-shadow 0.2s;
-        }
-        .news-item:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 8px 30px rgba(0,0,0,0.3);
-        }
-        .news-source {
-            display: inline-block;
-            padding: 4px 12px;
-            border-radius: 20px;
-            font-size: 0.75em;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .source-hn { background: #ff6600; color: #fff; }
-        .source-ars { background: #ff4400; color: #fff; }
-        .source-wired { background: #000; color: #fff; }
-        .news-title {
-            font-size: 1.4em;
-            margin-bottom: 12px;
-            line-height: 1.4;
-        }
-        .news-title a {
-            color: #fff;
-            text-decoration: none;
-        }
-        .news-title a:hover { color: #00d4ff; }
-        .news-insight {
-            color: #aaa;
-            font-size: 0.95em;
-            line-height: 1.6;
-            padding: 12px;
-            background: rgba(0,0,0,0.2);
-            border-radius: 8px;
-            border-left: 3px solid #7c3aed;
-        }
-        .original-title {
-            display: block;
-            color: #666;
-            font-size: 0.85em;
-            margin-top: 8px;
-        }
-        footer {
-            text-align: center;
-            padding: 30px;
-            color: #666;
-            font-size: 0.9em;
-        }
-        footer a { color: #00d4ff; text-decoration: none; }
-    </style>
+    <title>AI 科技简报 | 2026年3月12日</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = { darkMode: 'class' }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>body{font-family:'Noto Sans SC',sans-serif}</style>
+    <script>
+        (function(){
+            var t = localStorage.theme;
+            if(t === 'dark' || (!t && window.matchMedia('(prefers-color-scheme:dark)').matches)){
+                document.documentElement.classList.add('dark');
+            }
+        })();
+    </script>
 </head>
-<body>
-    <div class="container">
-        <header>
-            <h1>每日AI科技新闻</h1>
-            <p class="date">2026年3月12日 星期四</p>
+<body class="bg-gradient-to-br from-slate-50 via-slate-100 to-slate-200 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900 min-h-screen text-slate-900 dark:text-white transition-colors duration-300">
+    <div class="max-w-4xl mx-auto px-6 py-12">
+        <header class="text-center mb-16">
+            <div class="flex justify-between items-center mb-8">
+                <a href="/" class="text-blue-500 hover:text-blue-400 text-sm">← 返回首页</a>
+                <button id="theme-toggle" type="button" class="p-2 rounded-full bg-slate-200 dark:bg-slate-700 hover:bg-slate-300 dark:hover:bg-slate-600 transition-colors">
+                    <svg class="w-5 h-5 text-amber-500 dark:block hidden" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"/></svg>
+                    <svg class="w-5 h-5 text-slate-600 dark:hidden block" fill="currentColor" viewBox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"/></svg>
+                </button>
+            </div>
+            <div class="inline-flex items-center gap-2 bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 px-4 py-2 rounded-full text-sm mb-6">
+                <span class="w-2 h-2 bg-blue-500 rounded-full animate-pulse"></span>
+                每日 AI 科技简报
+            </div>
+            <h1 class="text-4xl font-bold mb-4 text-slate-900 dark:text-white">2026年3月12日</h1>
         </header>
-        
-        <ul class="news-list">
-            <li class="news-item">
-                <span class="news-source source-hn">Hacker News</span>
-                <h2 class="news-title">
-                    <a href="https://bloomberg.github.io/js-blog/post/temporal/" target="_blank">
-                        Temporal: JavaScript 时间处理标准化的9年艰辛历程
-                    </a>
-                </h2>
-                <div class="news-insight">
-                    <strong>洞察：</strong>JavaScript 终于有了现代日期时间API。Temporal 从2017年提出至今历经9年，解决了原生Date对象的诸多痛点（时区处理、不可变性、精度等）。这是TC39今年正式发布的重要特性，建议开发者尽快上手。
+
+        <section class="space-y-8">
+            <div class="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800 rounded-2xl p-6">
+                <h3 class="text-lg font-bold text-amber-800 dark:text-amber-300 mb-3">今日洞察</h3>
+                <div class="text-amber-700 dark:text-amber-400 space-y-2">
+                    <p><strong class="text-amber-600 dark:text-amber-300">三条主线：</strong></p>
+                    <ul class="list-disc list-inside space-y-2 ml-2">
+                        <li><strong class="text-amber-600 dark:text-amber-300">AI 模型正在走向轻量化和本地化</strong> — Microsoft 的 BitNet 100B 1-Bit 模型是一个里程碑</li>
+                        <li><strong class="text-amber-600 dark:text-amber-300">科技社区开始反思 AI 生成内容</strong> — HN 和 Debian 的态度说明行业在自我约束</li>
+                        <li><strong class="text-amber-600 dark:text-amber-300">数字化系统的信任危机</strong> — 瑞士电子投票失败和 DHS 数据泄露都暴露了系统性问题</li>
+                    </ul>
                 </div>
-                <span class="original-title">原文: Temporal: The 9-year journey to fix time in JavaScript</span>
-            </li>
-            
-            <li class="news-item">
-                <span class="news-source source-hn">Hacker News</span>
-                <h2 class="news-title">
-                    <a href="https://metr.org/notes/2026-03-10-many-swe-bench-passing-prs-would-not-be-merged-into-main/" target="_blank">
-                        SWE-bench 测试通过 ≠ 代码能被合并：揭示AI编程评估的盲区
-                    </a>
-                </h2>
-                <div class="news-insight">
-                    <strong>洞察：</strong>SWE-bench是评估AI编程能力的热门基准，但新研究显示很多"通过"PR在实际审查中会被拒绝。这提示我们：AI编程助手的评估不能只看测试通过率，还需关注代码质量、可维护性等维度。
+            </div>
+
+            <article class="bg-white dark:bg-slate-800/50 rounded-2xl p-8 border border-slate-200 dark:border-slate-700/50">
+                <div class="flex items-start justify-between gap-4 mb-4">
+                    <span class="text-3xl font-bold text-blue-500">1</span>
+                    <a href="https://news.ycombinator.com/newsguidelines.html#generated" target="_blank" class="text-blue-500 hover:text-blue-400 text-sm">Hacker News →</a>
                 </div>
-                <span class="original-title">原文: Many SWE-bench-Passing PRs would not be merged</span>
-            </li>
-            
-            <li class="news-item">
-                <span class="news-source source-hn">Hacker News</span>
-                <h2 class="news-title">
-                    <a href="https://hacks.mozilla.org/2026/02/making-webassembly-a-first-class-language-on-the-web/" target="_blank">
-                        WebAssembly 正式成为 Web 一等语言：全面集成指日可待
-                    </a>
-                </h2>
-                <div class="news-insight">
-                    <strong>洞察：</strong>Mozilla 宣布推动 WebAssembly 成为 Web 等公民平台的一。这意味着WASM将获得与 JavaScript 同等的原生支持和API访问能力。对性能敏感的应用（游戏、视频处理、AI推理等）将是重大利好。
+                <h3 class="text-xl font-bold mb-4 text-slate-900 dark:text-white">Hacker News 禁止发布 AI 生成/编辑的评论</h3>
+                <p class="text-slate-600 dark:text-slate-300 leading-relaxed mb-4">HN 明确表态：这是"人类之间的对话"，AI 生成的内容不属于这里。这一声明比任何政策都更有象征意义——科技社区正在自发划定 AI 的边界。</p>
+                <div class="text-sm text-slate-500 dark:text-slate-400">原文: Don't post generated/AI-edited comments. HN is for conversation between humans</div>
+            </article>
+
+            <article class="bg-white dark:bg-slate-800/50 rounded-2xl p-8 border border-slate-200 dark:border-slate-700/50">
+                <div class="flex items-start justify-between gap-4 mb-4">
+                    <span class="text-3xl font-bold text-blue-500">2</span>
+                    <a href="https://github.com/microsoft/BitNet" target="_blank" class="text-blue-500 hover:text-blue-400 text-sm">GitHub →</a>
                 </div>
-                <span class="original-title">原文: Making WebAssembly a first-class language on the Web</span>
-            </li>
-            
-            <li class="news-item">
-                <span class="news-source source-ars">Ars Technica</span>
-                <h2 class="news-title">
-                    <a href="https://arstechnica.com/gaming/2026/03/google-play-games-for-pc-is-getting-more-premium-titles-and-cross-buy-with-android/" target="_blank">
-                        Google Play 游戏服务登陆 PC：更多大作支持跨平台购买
-                    </a>
-                </h2>
-                <div class="news-insight">
-                    <strong>洞察：</strong>Google 正在加强桌面游戏生态，2026年GDC上宣布将引入更多Premium游戏（Sledding Game、9 Kings、Potion Craft等），并支持移动端与PC双向愿望单和购买。这对跨设备游戏体验是重要一步，也显示Google对PC游戏市场的认真态度。
+                <h3 class="text-xl font-bold mb-4 text-slate-900 dark:text-white">Microsoft 发布 BitNet：1000 亿参数 1-Bit 模型可在本地 CPU 运行</h3>
+                <p class="text-slate-600 dark:text-slate-300 leading-relaxed mb-4">100B 参数模型原来需要大量 GPU，现在可以在普通 CPU 上运行。这是端侧 AI 的重大突破，意味着每个人都可以在本地运行大模型。</p>
+                <div class="text-sm text-slate-500 dark:text-slate-400">原文: BitNet: 100B Param 1-Bit model for local CPUs</div>
+            </article>
+
+            <article class="bg-white dark:bg-slate-800/50 rounded-2xl p-8 border border-slate-200 dark:border-slate-700/50">
+                <div class="flex items-start justify-between gap-4 mb-4">
+                    <span class="text-3xl font-bold text-blue-500">3</span>
+                    <a href="https://apnews.com/article/uk-house-of-lords-hereditary-peers-expelled-535df8781dd01e8970acda1dca99d3d4" target="_blank" class="text-blue-500 hover:text-blue-400 text-sm">AP News →</a>
                 </div>
-                <span class="original-title">原文: Google Play Games for PC is getting more premium titles and cross-buy with Android</span>
-            </li>
-            
-            <li class="news-item">
-                <span class="news-source source-wired">Wired</span>
-                <h2 class="news-title">
-                    <a href="https://www.wired.com/story/nvidia-investing-26-billion-open-source-models/" target="_blank">
-                        Nvidia 豪掷260亿美元投入开源大模型：挑战 OpenAI/Anthropic/DeepSeek
-                    </a>
-                </h2>
-                <div class="news-insight">
-                    <strong>洞察：</strong>继CUDA生态统治AI训练市场后，Nvidia现在大举进军开源模型领域。260亿美元的投入将用于构建开放权重模型，这可能重塑AI模型竞争格局。Nvidia的算力优势+开源策略，对整个AI行业格局影响深远。
+                <h3 class="text-xl font-bold mb-4 text-slate-900 dark:text-white">英国 700 年来首次驱逐上议院世袭贵族</h3>
+                <p class="text-slate-600 dark:text-slate-300 leading-relaxed mb-4">这是英国议会历史上最大的结构性变革之一。近千名世袭贵族失去了自动进入上议院的权利，标志着英国向现代化民主迈出重要一步。</p>
+                <div class="text-sm text-slate-500 dark:text-slate-400">原文: Britain is ejecting hereditary nobles from Parliament after 700 years</div>
+            </article>
+
+            <article class="bg-white dark:bg-slate-800/50 rounded-2xl p-8 border border-slate-200 dark:border-slate-700/50">
+                <div class="flex items-start justify-between gap-4 mb-4">
+                    <span class="text-3xl font-bold text-blue-500">4</span>
+                    <a href="https://micahflee.github.io/ice-contracts/" target="_blank" class="text-blue-500 hover:text-blue-400 text-sm"> Micah F Lee →</a>
                 </div>
-                <span class="original-title">原文: Nvidia Will Spend $26 Billion to Build Open-Weight AI Models, Filings Show</span>
-            </li>
-            
-            <li class="news-item">
-                <span class="news-source source-wired">Wired</span>
-                <h2 class="news-title">
-                    <a href="https://www.wired.com/story/grammarly-is-facing-a-class-action-lawsuit-over-its-ai-expert-review-feature/" target="_blank">
-                        Grammarly AI "专家审核"功能涉集体诉讼：未经授权使用作者身份
-                    </a>
-                </h2>
-                <div class="news-insight">
-                    <strong>洞察：</strong>Grammarly已被集体诉讼，指控其AI功能假冒知名作者和学者进行编辑建议。继Stack Overflow出售数据、Reddit限制API后，又一AI数据伦理争议案例。AI产品需更审慎处理数据来源和身份标识问题。
+                <h3 class="text-xl font-bold mb-4 text-slate-900 dark:text-white">DHS 合同 Explorer：黑客泄露国土安全部数据</h3>
+                <p class="text-slate-600 dark:text-slate-300 leading-relaxed mb-4">黑客公开了国土安全部与私营企业的合作数据。这类大规模数据泄露再次提醒我们：政府系统的网络安全远未达到应有的水平。</p>
+                <div class="text-sm text-slate-500 dark:text-slate-400">原文: DHS Contracts Explorer – Hacked data from the Office of Industry Partnership</div>
+            </article>
+
+            <article class="bg-white dark:bg-slate-800/50 rounded-2xl p-8 border border-slate-200 dark:border-slate-700/50">
+                <div class="flex items-start justify-between gap-4 mb-4">
+                    <span class="text-3xl font-bold text-blue-500">5</span>
+                    <a href="https://www.theregister.com/2026/03/11/swiss_evote_usb_snafu/" target="_blank" class="text-blue-500 hover:text-blue-400 text-sm">The Register →</a>
                 </div>
-                <span class="original-title">原文: Grammarly Is Facing a Class Action Lawsuit Over Its AI 'Expert Review' Feature</span>
-            </li>
-        </ul>
-        
-        <footer>
-            <p>每日更新于 <a href="https://github.com/akuma/daily-news">GitHub</a></p>
+                <h3 class="text-xl font-bold mb-4 text-slate-900 dark:text-white">瑞士电子投票试点解密失败，无法统计选票</h3>
+                <p class="text-slate-600 dark:text-slate-300 leading-relaxed mb-4">2048 张选票无法统计——瑞士这个以精密著称的国家，在电子投票上栽了跟头。加密和隐私保护的技术复杂性，远超多数人的想象。</p>
+                <div class="text-sm text-slate-500 dark:text-slate-400">原文: Swiss e-voting pilot can't count 2,048 ballots after decryption failure</div>
+            </article>
+
+            <article class="bg-white dark:bg-slate-800/50 rounded-2xl p-8 border border-slate-200 dark:border-slate-700/50">
+                <div class="flex items-start justify-between gap-4 mb-4">
+                    <span class="text-3xl font-bold text-blue-500">6</span>
+                    <a href="https://newatlas.com/environment/5-200-holes-peruvian-mountain/" target="_blank" class="text-blue-500 hover:text-blue-400 text-sm">New Atlas →</a>
+                </div>
+                <h3 class="text-xl font-bold mb-4 text-slate-900 dark:text-white">秘鲁山地发现 5200 个孔洞，由古代经济活动留下</h3>
+                <p class="text-slate-600 dark:text-slate-300 leading-relaxed mb-4">这些孔洞是古代印加文明采矿活动的遗迹，揭示了当时复杂的经济体系。考古学与经济学跨界，让人对古代文明有了新的认识。</p>
+                <div class="text-sm text-slate-500 dark:text-slate-400">原文: 5,200 holes carved into a Peruvian mountain left by an ancient economy</div>
+            </article>
+        </section>
+
+        <footer class="mt-16 pt-8 border-t border-slate-200 dark:border-slate-800 text-center text-slate-500 dark:text-slate-400 text-sm">
+            <p>由 AI 自动整理 · 每天北京时间 7:00 更新</p>
         </footer>
     </div>
+    <script>
+        document.getElementById('theme-toggle').addEventListener('click', function(){
+            if(document.documentElement.classList.contains('dark')){
+                document.documentElement.classList.remove('dark');
+                localStorage.theme = 'light';
+            }else{
+                document.documentElement.classList.add('dark');
+                localStorage.theme = 'dark';
+            }
+        });
+    </script>
 </body>
 </html>
