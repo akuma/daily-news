@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI 科技简报 | 每日 AI 新闻</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark')
+        } else {
+            document.documentElement.classList.remove('dark')
+        }
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
@@ -12,35 +19,45 @@
         body { font-family: 'Noto Sans SC', sans-serif; }
     </style>
 </head>
-<body class="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 min-h-screen text-white">
+<body class="bg-gradient-to-br from-slate-50 via-slate-100 to-slate-200 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900 min-h-screen text-slate-900 dark:text-white transition-colors duration-300">
     <div class="max-w-4xl mx-auto px-6 py-12">
+        <!-- Header -->
         <header class="text-center mb-16">
-            <div class="inline-flex items-center gap-2 bg-blue-500/20 text-blue-300 px-4 py-2 rounded-full text-sm mb-6">
-                <span class="w-2 h-2 bg-blue-400 rounded-full animate-pulse"></span>
+            <!-- Theme Toggle -->
+            <div class="flex justify-end mb-8">
+                <button id="theme-toggle" class="p-2 rounded-full bg-slate-200 dark:bg-slate-700 hover:bg-slate-300 dark:hover:bg-slate-600 transition-colors">
+                    <svg id="sun-icon" class="w-5 h-5 text-amber-500 hidden dark:block" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"/></svg>
+                    <svg id="moon-icon" class="w-5 h-5 text-slate-600 block dark:hidden" fill="currentColor" viewBox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"/></svg>
+                </button>
+            </div>
+            
+            <div class="inline-flex items-center gap-2 bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 px-4 py-2 rounded-full text-sm mb-6">
+                <span class="w-2 h-2 bg-blue-500 rounded-full animate-pulse"></span>
                 每日 AI 科技简报
             </div>
-            <h1 class="text-5xl font-bold mb-4 bg-gradient-to-r from-white to-slate-400 bg-clip-text text-transparent">
+            <h1 class="text-5xl font-bold mb-4 bg-gradient-to-r from-slate-900 to-slate-600 dark:from-white dark:to-slate-400 bg-clip-text text-transparent">
                 AI News Daily
             </h1>
-            <p class="text-slate-400 text-lg max-w-2xl mx-auto">
+            <p class="text-slate-600 dark:text-slate-400 text-lg max-w-2xl mx-auto">
                 每天早上 7:00（北京时间）自动更新。精选海外科技媒体 & Hacker News 热门 AI 新闻，翻译+解读。
             </p>
         </header>
 
+        <!-- News List -->
         <section>
-            <h2 class="text-2xl font-bold text-slate-200 mb-8 flex items-center gap-3">
+            <h2 class="text-2xl font-bold text-slate-800 dark:text-slate-200 mb-8 flex items-center gap-3">
                 <span class="w-1 h-8 bg-blue-500 rounded-full"></span>
                 新闻存档
             </h2>
 
             <div class="space-y-4">
-                <a href="news/2026-03-12.html" class="block bg-slate-800/50 rounded-xl p-6 border border-slate-700/50 hover:border-blue-500/50 hover:bg-slate-800/80 transition-all group">
+                <a href="news/2026-03-12.html" class="block bg-white dark:bg-slate-800/50 rounded-xl p-6 border border-slate-200 dark:border-slate-700/50 hover:border-blue-500/50 hover:bg-slate-50 dark:hover:bg-slate-800/80 transition-all group">
                     <div class="flex items-center justify-between">
                         <div>
-                            <h3 class="text-xl font-bold text-white group-hover:text-blue-400 transition-colors">
+                            <h3 class="text-xl font-bold text-slate-900 dark:text-white group-hover:text-blue-400 transition-colors">
                                 2026 年 3 月 12 日
                             </h3>
-                            <p class="text-slate-400 mt-1">
+                            <p class="text-slate-500 dark:text-slate-400 mt-1">
                                 HN 禁止 AI 评论 · BitNet 100B 1-bit 模型 · AI 面试官 · 纵向研究数据 · ...
                             </p>
                         </div>
@@ -48,13 +65,13 @@
                     </div>
                 </a>
 
-                <a href="news/2026-03-11.html" class="block bg-slate-800/50 rounded-xl p-6 border border-slate-700/50 hover:border-blue-500/50 hover:bg-slate-800/80 transition-all group">
+                <a href="news/2026-03-11.html" class="block bg-white dark:bg-slate-800/50 rounded-xl p-6 border border-slate-200 dark:border-slate-700/50 hover:border-blue-500/50 hover:bg-slate-50 dark:hover:bg-slate-800/80 transition-all group">
                     <div class="flex items-center justify-between">
                         <div>
-                            <h3 class="text-xl font-bold text-white group-hover:text-blue-400 transition-colors">
+                            <h3 class="text-xl font-bold text-slate-900 dark:text-white group-hover:text-blue-400 transition-colors">
                                 2026 年 3 月 11 日
                             </h3>
-                            <p class="text-slate-400 mt-1">
+                            <p class="text-slate-500 dark:text-slate-400 mt-1">
                                 Amazon 要求高级工程师审批 AI 代码 · Yann LeCun 筹集 10 亿美元 · Debian 社区对 AI 贡献保持中立 · ...
                             </p>
                         </div>
@@ -64,10 +81,11 @@
             </div>
         </section>
 
-        <section class="mt-16 pt-8 border-t border-slate-800">
-            <div class="bg-gradient-to-r from-slate-800/50 to-slate-800/30 rounded-2xl p-8">
-                <h3 class="text-lg font-bold text-slate-200 mb-4">关于这个项目</h3>
-                <div class="text-slate-400 space-y-2 text-sm">
+        <!-- About -->
+        <section class="mt-16 pt-8 border-t border-slate-200 dark:border-slate-800">
+            <div class="bg-slate-100 dark:bg-slate-800/50 rounded-2xl p-8">
+                <h3 class="text-lg font-bold text-slate-800 dark:text-slate-200 mb-4">关于这个项目</h3>
+                <div class="text-slate-600 dark:text-slate-400 space-y-2 text-sm">
                     <p>• 新闻源：Hacker News、Ars Technica、Wired 等海外权威科技媒体</p>
                     <p>• 翻译：AI 实时翻译（信达雅，保留技术名词）</p>
                     <p>• 更新：每天北京时间 7:00 自动抓取生成</p>
@@ -77,10 +95,24 @@
             </div>
         </section>
 
-        <footer class="mt-16 pt-8 border-t border-slate-800 text-center text-slate-500 text-sm">
+        <!-- Footer -->
+        <footer class="mt-16 pt-8 border-t border-slate-200 dark:border-slate-800 text-center text-slate-500 dark:text-slate-500 text-sm">
             <p>由 AI 自动整理 · 每天北京时间 7:00 更新</p>
             <p class="mt-2">Powered by OpenClaw + MiniMax M2.5</p>
         </footer>
     </div>
+
+    <script>
+        const toggle = document.getElementById('theme-toggle');
+        toggle.addEventListener('click', () => {
+            if (document.documentElement.classList.contains('dark')) {
+                document.documentElement.classList.remove('dark');
+                localStorage.theme = 'light';
+            } else {
+                document.documentElement.classList.add('dark');
+                localStorage.theme = 'dark';
+            }
+        });
+    </script>
 </body>
 </html>
