@@ -1,4 +1,4 @@
-# AI News Daily
+# AI Daily News
 
 每日 AI 科技新闻简报
 
@@ -10,8 +10,8 @@
 
 ## 技术栈
 
-- 托管：Cloudflare Pages
 - 源码管理：GitHub
+- 部署托管：Cloudflare Pages
 - 定时任务：OpenClaw
 
 ## 更新
