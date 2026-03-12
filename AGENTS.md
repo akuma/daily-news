@@ -9,4 +9,4 @@ This project uses AI agents to generate daily AI news summaries.
 3. Add AI insights
 4. Generate static HTML
 5. Commit new HTML files to repo and push to github
-5. Deploy to Cloudflare Pages (auto trigger)
+6. Deploy to Cloudflare Pages (auto trigger)
