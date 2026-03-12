@@ -5,138 +5,128 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI 科技简报 | 2026年3月12日</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = { darkMode: 'class' }
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
-    <style>
-        body { font-family: 'Noto Sans SC', sans-serif; }
-    </style>
+    <style>body{font-family:'Noto Sans SC',sans-serif}</style>
+    <script>
+        (function(){
+            var t = localStorage.theme;
+            if(t === 'dark' || (!t && window.matchMedia('(prefers-color-scheme:dark)').matches)){
+                document.documentElement.classList.add('dark');
+            }
+        })();
+    </script>
 </head>
-<body class="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 min-h-screen text-white">
+<body class="bg-gradient-to-br from-slate-50 via-slate-100 to-slate-200 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900 min-h-screen text-slate-900 dark:text-white transition-colors duration-300">
     <div class="max-w-4xl mx-auto px-6 py-12">
         <header class="text-center mb-16">
-            <div class="inline-flex items-center gap-2 bg-blue-500/20 text-blue-300 px-4 py-2 rounded-full text-sm mb-6">
-                <span class="w-2 h-2 bg-blue-400 rounded-full animate-pulse"></span>
+            <div class="flex justify-end mb-8">
+                <a href="/" class="text-blue-500 hover:text-blue-400 text-sm">← 返回首页</a>
+                <button id="theme-toggle" type="button" class="p-2 rounded-full bg-slate-200 dark:bg-slate-700 hover:bg-slate-300 dark:hover:bg-slate-600 transition-colors ml-4">
+                    <svg class="w-5 h-5 text-amber-500 dark:block hidden" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"/></svg>
+                    <svg class="w-5 h-5 text-slate-600 dark:hidden block" fill="currentColor" viewBox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"/></svg>
+                </button>
+            </div>
+            <div class="inline-flex items-center gap-2 bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 px-4 py-2 rounded-full text-sm mb-6">
+                <span class="w-2 h-2 bg-blue-500 rounded-full animate-pulse"></span>
                 每日 AI 科技简报
             </div>
-            <h1 class="text-5xl font-bold mb-4 bg-gradient-to-r from-white to-slate-400 bg-clip-text text-transparent">
-                2026年3月12日
-            </h1>
-            <p class="text-slate-400 text-lg">来源：Hacker News + 海外科技媒体</p>
+            <h1 class="text-4xl font-bold mb-4 text-slate-900 dark:text-white">2026年3月12日</h1>
         </header>
 
-        <section class="mb-16">
-            <div class="bg-gradient-to-r from-amber-500/10 to-orange-500/10 border border-amber-500/30 rounded-2xl p-8">
-                <h2 class="text-xl font-bold text-amber-300 mb-4 flex items-center gap-2">
-                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M11 3a1 1 0 10-2 0v1a1 1 0 102 0V3zM15.657 5.757a1 1 0 00-1.414-1.414l-.707.707a1 1 0 001.414 1.414l.707-.707zM18 10a1 1 0 01-1 1h-1a1 1 0 110-2h1a1 1 0 011 1zM5.05 6.464A1 1 0 106.464 5.05l-.707-.707a1 1 0 00-1.414 1.414l.707.707zM5 10a1 1 0 01-1 1H3a1 1 0 110-2h1a1 1 0 011 1zM8 16v-1h4v1a2 2 0 11-4 0zM12 14c.015-.34.208-.646.477-.859a4 4 0 10-4.954 0c.27.213.462.519.476.859h4.002z"/></svg>
-                    今日洞察
-                </h2>
-                <div class="space-y-4 text-slate-300 leading-relaxed">
+        <section class="space-y-8">
+            <div class="bg-amber-500/10 dark:bg-amber-500/20 border border-amber-500/30 rounded-2xl p-6 mb-8">
+                <h3 class="text-lg font-bold text-amber-300 mb-4">今日洞察</h3>
+                <div class="text-slate-700 dark:text-slate-300 space-y-2">
                     <p><strong class="text-amber-200">三条主线：</strong></p>
                     <ul class="list-disc list-inside space-y-2 ml-2">
-                        <li><strong class="text-amber-200">HN 社区对 AI 评论宣战</strong> — Hacker News 官方禁止 AI 生成/编辑的评论，这是社区对 AI 污染的反击</li>
-                        <li><strong class="text-amber-200">端侧大模型爆发</strong> — BitNet 实现 100B 参数 1-bit 模型在 CPU 上运行，本地大模型不再是梦想</li>
-                        <li><strong class="text-amber-200">AI 面试开始普及</strong> — 求职者开始被 AI 面试，招聘流程正在被快速重塑</li>
+                        <li><strong class="text-amber-200">HN 社区对 AI 评论宣战</strong> — Hacker News 官方禁止 AI 生成/编辑的评论</li>
+                        <li><strong class="text-amber-200">端侧大模型爆发</strong> — BitNet 实现 100B 参数 1-bit 模型在 CPU 上运行</li>
+                        <li><strong class="text-amber-200">AI 面试开始普及</strong> — 求职者开始被 AI 面试</li>
                     </ul>
                 </div>
             </div>
-        </section>
 
-        <section class="space-y-8">
-            <h2 class="text-2xl font-bold text-slate-200 mb-8 flex items-center gap-3">
-                <span class="w-1 h-8 bg-blue-500 rounded-full"></span>
-                Top 6 新闻
-            </h2>
-
-            <article class="bg-slate-800/50 rounded-2xl p-8 border border-slate-700/50 hover:border-blue-500/50 transition-all">
+            <article class="bg-white dark:bg-slate-800/50 rounded-2xl p-8 border border-slate-200 dark:border-slate-700/50">
                 <div class="flex items-start justify-between gap-4 mb-4">
-                    <span class="text-4xl font-bold text-blue-500">1</span>
-                    <a href="https://news.ycombinator.com/item?id=47333794" target="_blank" class="text-blue-400 hover:text-blue-300 text-sm">news.ycombinator.com →</a>
+                    <span class="text-3xl font-bold text-blue-500">1</span>
+                    <a href="https://news.ycombinator.com/item?id=47333794" target="_blank" class="text-blue-500 hover:text-blue-400 text-sm">news.ycombinator.com →</a>
                 </div>
-                <h3 class="text-xl font-bold mb-4 text-white">HN 官方：禁止发布 AI 生成/编辑的评论</h3>
-                <p class="text-slate-300 leading-relaxed mb-4">
-                    Hacker News 官方明确表态：不允许发布 AI 生成或 AI 编辑的评论，HN 是人与人之间的对话。这条规则的背后是社区对 AI 内容泛滥的担忧。在所有社交平台都在拥抱 AI 的当下，HN 选择逆流而上。值得注意的是，这与近期各大科技公司疯狂推广 AI 产品的趋势形成了鲜明对比。HN 的读者群体以开发者为主，这个群体对 AI 的态度分化明显——有人用它提效，有人厌它污染讨论质量。
-                </p>
-                <div class="text-sm text-slate-500">
-                    <span class="text-amber-400">Score:</span> 892 · <span class="text-amber-400">原文:</span> Don't post generated/AI-edited comments. HN is for conversation between humans.
-                </div>
+                <h3 class="text-xl font-bold mb-4 text-slate-900 dark:text-white">HN 官方：禁止发布 AI 生成/编辑的评论</h3>
+                <p class="text-slate-600 dark:text-slate-300 leading-relaxed mb-4">Hacker News 官方明确表态：不允许发布 AI 生成或 AI 编辑的评论，HN 是人与人之间的对话。这条规则的背后是社区对 AI 内容泛滥的担忧。</p>
+                <div class="text-sm text-slate-500 dark:text-slate-400">Score: 892 | 原文: Don't post generated/AI-edited comments</div>
             </article>
 
-            <article class="bg-slate-800/50 rounded-2xl p-8 border border-slate-700/50 hover:border-blue-500/50 transition-all">
+            <article class="bg-white dark:bg-slate-800/50 rounded-2xl p-8 border border-slate-200 dark:border-slate-700/50">
                 <div class="flex items-start justify-between gap-4 mb-4">
-                    <span class="text-4xl font-bold text-blue-500">2</span>
-                    <a href="https://github.com/microsoft/BitNet" target="_blank" class="text-blue-400 hover:text-blue-300 text-sm">github.com →</a>
+                    <span class="text-3xl font-bold text-blue-500">2</span>
+                    <a href="https://github.com/microsoft/BitNet" target="_blank" class="text-blue-500 hover:text-blue-400 text-sm">github.com →</a>
                 </div>
-                <h3 class="text-xl font-bold mb-4 text-white">BitNet：100B 参数 1-bit 模型可在本地 CPU 运行</h3>
-                <p class="text-slate-300 leading-relaxed mb-4">
-                    微软发布了 BitNet，实现了在普通 CPU 上运行 1000 亿参数 1-bit 大模型的可能性。传统大模型需要 GPU 显存，而 BitNet 通过 1-bit 量化将模型体积大幅压缩。这意味着：高端游戏本、甚至普通办公电脑都可能运行 70B+ 的模型。对于个人开发者和小型团队而言，本地部署大模型的门槛正在快速降低。Apple Silicon + BitNet 的组合可能成为下一代个人 AI 助手的标配。
-                </p>
-                <div class="text-sm text-slate-500">
-                    <span class="text-amber-400">Score:</span> 647 · <span class="text-amber-400">原文:</span> BitNet: 100B Param 1-Bit model for local CPUs
-                </div>
+                <h3 class="text-xl font-bold mb-4 text-slate-900 dark:text-white">BitNet：100B 参数 1-bit 模型可在本地 CPU 运行</h3>
+                <p class="text-slate-600 dark:text-slate-300 leading-relaxed mb-4">微软发布了 BitNet，实现了在普通 CPU 上运行 1000 亿参数 1-bit 大模型的可能性。这意味着高端游戏本、甚至普通办公电脑都可能运行 70B+ 的模型。</p>
+                <div class="text-sm text-slate-500 dark:text-slate-400">Score: 647 | 原文: BitNet: 100B Param 1-Bit model for local CPUs</div>
             </article>
 
-            <article class="bg-slate-800/50 rounded-2xl p-8 border border-slate-700/50 hover:border-blue-500/50 transition-all">
+            <article class="bg-white dark:bg-slate-800/50 rounded-2xl p-8 border border-slate-200 dark:border-slate-700/50">
                 <div class="flex items-start justify-between gap-4 mb-4">
-                    <span class="text-4xl font-bold text-blue-500">3</span>
-                    <a href="https://news.ycombinator.com/item?id=47332771" target="_blank" class="text-blue-400 hover:text-blue-300 text-sm">news.ycombinator.com →</a>
+                    <span class="text-3xl font-bold text-blue-500">3</span>
+                    <a href="https://news.ycombinator.com/item?id=47332771" target="_blank" class="text-blue-500 hover:text-blue-400 text-sm">news.ycombinator.com →</a>
                 </div>
-                <h3 class="text-xl font-bold mb-4 text-white">我被 AI 面试官面试了</h3>
-                <p class="text-slate-300 leading-relaxed mb-4">
-                    一位求职者在面试过程中发现对面是 AI 而非真人，引发了关于 AI 招聘的讨论。AI 面试官可以同时面试大量候选人、消除人类偏见（理论上）、24/7 工作。但问题也很明显：AI 是否能真正评估候选人的软技能？候选人面对 AI 时的表现是否真实？目前美国已有多个 AI 面试产品（如 HireVue）被应用于校招，这次 HN 上的讨论说明开发者群体对 AI 介入招聘的态度正在从好奇转向警惕。
-                </p>
-                <div class="text-sm text-slate-500">
-                    <span class="text-amber-400">Score:</span> 523 · <span class="text-amber-400">原文:</span> I was interviewed by an AI bot for a job
-                </div>
+                <h3 class="text-xl font-bold mb-4 text-slate-900 dark:text-white">我被 AI 面试官面试了</h3>
+                <p class="text-slate-600 dark:text-slate-300 leading-relaxed mb-4">一位求职者在面试过程中发现对面是 AI 而非真人，引发了关于 AI 招聘的讨论。AI 面试官可以同时面试大量候选人、消除人类偏见（理论上）、24/7 工作。</p>
+                <div class="text-sm text-slate-500 dark:text-slate-400">Score: 523 | 原文: I was interviewed by an AI bot for a job</div>
             </article>
 
-            <article class="bg-slate-800/50 rounded-2xl p-8 border border-slate-700/50 hover:border-blue-500/50 transition-all">
+            <article class="bg-white dark:bg-slate-800/50 rounded-2xl p-8 border border-slate-200 dark:border-slate-700/50">
                 <div class="flex items-start justify-between gap-4 mb-4">
-                    <span class="text-4xl font-bold text-blue-500">4</span>
-                    <a href="https://www.nytimes.com/2026/03/11/science/peru-nazca-lines-holes.html" target="_blank" class="text-blue-400 hover:text-blue-300 text-sm">nytimes.com →</a>
+                    <span class="text-3xl font-bold text-blue-500">4</span>
+                    <a href="https://www.nytimes.com/2026/03/11/science/peru-nazca-lines-holes.html" target="_blank" class="text-blue-500 hover:text-blue-400 text-sm">nytimes.com →</a>
                 </div>
-                <h3 class="text-xl font-bold mb-4 text-white">秘鲁纳斯卡山脉发现 5200 个孔洞，揭示古代经济系统</h3>
-                <p class="text-slate-300 leading-relaxed mb-4">
-                    考古学家在秘鲁纳斯卡山脉发现了 5200 个古代挖的孔洞，这些孔洞可能用于记录古代经济交易。虽然不是 AI 新闻，但这个发现提醒我们：人类用技术记录信息的历史远比想象悠久。更有趣的是，AI 正在帮助考古学家分析这些古代模式——计算机视觉可以快速识别地形特征，机器学习可以推测孔洞的年代和用途。AI + 考古学正在开辟一个新领域。
-                </p>
-                <div class="text-sm text-slate-500">
-                    <span class="text-amber-400">Score:</span> 412 · <span class="text-amber-400">原文:</span> 5,200 holes carved into a Peruvian mountain left by an ancient economy
-                </div>
+                <h3 class="text-xl font-bold mb-4 text-slate-900 dark:text-white">秘鲁纳斯卡山脉发现 5200 个孔洞，揭示古代经济系统</h3>
+                <p class="text-slate-600 dark:text-slate-300 leading-relaxed mb-4">考古学家在秘鲁纳斯卡山脉发现了 5200 个古代挖的孔洞。AI 正在帮助考古学家分析这些古代模式——计算机视觉可以快速识别地形特征。</p>
+                <div class="text-sm text-slate-500 dark:text-slate-400">Score: 412 | 原文: 5,200 holes carved into a Peruvian mountain</div>
             </article>
 
-            <article class="bg-slate-800/50 rounded-2xl p-8 border border-slate-700/50 hover:border-blue-500/50 transition-all">
+            <article class="bg-white dark:bg-slate-800/50 rounded-2xl p-8 border border-slate-200 dark:border-slate-700/50">
                 <div class="flex items-start justify-between gap-4 mb-4">
-                    <span class="text-4xl font-bold text-blue-500">5</span>
-                    <a href="https://www.oreilly.com/tim/against-vibes-when-is-a-generative-model-useful/" target="_blank" class="text-blue-400 hover:text-blue-300 text-sm">oreilly.com →</a>
+                    <span class="text-3xl font-bold text-blue-500">5</span>
+                    <a href="https://www.oreilly.com/tim/against-vibes-when-is-a-generative-model-useful/" target="_blank" class="text-blue-500 hover:text-blue-400 text-sm">oreilly.com →</a>
                 </div>
-                <h3 class="text-xl font-bold mb-4 text-white">反对"感觉"：生成式模型什么时候真正有用</h3>
-                <p class="text-slate-300 leading-relaxed mb-4">
-                    Tim O'Reilly 发文质疑当前 AI 圈的" vibes-only"（纯感觉）思维。他指出很多 AI 产品声称"很有感觉"，但缺乏具体的用例和商业模式。这篇文章在 HN 引发热议，观点分为两派：一派认为 AI 需要找到"钉子"（具体问题）而不是只造"锤子"（通用能力）；另一派认为这是新技术发展的必经之路，先有工具再找用途。O'Reilly 的观点对于当下火热的 AI 创业潮是一剂清醒剂。
-                </p>
-                <div class="text-sm text-slate-500">
-                    <span class="text-amber-400">Score:</span> 389 · <span class="text-amber-400">原文:</span> Against vibes: When is a generative model useful
-                </div>
+                <h3 class="text-xl font-bold mb-4 text-slate-900 dark:text-white">反对"感觉"：生成式模型什么时候真正有用</h3>
+                <p class="text-slate-600 dark:text-slate-300 leading-relaxed mb-4">Tim O'Reilly 发文质疑当前 AI 圈的" vibes-only"（纯感觉）思维。他指出很多 AI 产品声称"很有感觉"，但缺乏具体的用例和商业模式。</p>
+                <div class="text-sm text-slate-500 dark:text-slate-400">Score: 389 | 原文: Against vibes: When is a generative model useful</div>
             </article>
 
-            <article class="bg-slate-800/50 rounded-2xl p-8 border border-slate-700/50 hover:border-blue-500/50 transition-all">
+            <article class="bg-white dark:bg-slate-800/50 rounded-2xl p-8 border border-slate-200 dark:border-slate-700/50">
                 <div class="flex items-start justify-between gap-4 mb-4">
-                    <span class="text-4xl font-bold text-blue-500">6</span>
-                    <a href="https://news.ycombinator.com/item?id=47329795" target="_blank" class="text-blue-400 hover:text-blue-300 text-sm">news.ycombinator.com →</a>
+                    <span class="text-3xl font-bold text-blue-500">6</span>
+                    <a href="https://news.ycombinator.com/item?id=47329795" target="_blank" class="text-blue-500 hover:text-blue-400 text-sm">news.ycombinator.com →</a>
                 </div>
-                <h3 class="text-xl font-bold mb-4 text-white">AI 对开发者影响的纵向研究初步数据公布</h3>
-                <p class="text-slate-300 leading-relaxed mb-4">
-                    一项跟踪 AI 对开发者工作影响的纵向研究发布了初步数据。结果显示：使用 AI 工具的开发者代码产出量提升了约 40%，但代码质量（bug 率）略有下降。更值得关注的是：初级开发者受益最大，而高级开发者的效率提升不那么明显。这说明 AI 对不同层级开发者的影响是不对称的。对于团队管理者而言，如何平衡 AI 提效与代码质量风险，成为新的管理课题。
-                </p>
-                <div class="text-sm text-slate-500">
-                    <span class="text-amber-400">Score:</span> 356 · <span class="text-amber-400">原文:</span> Preliminary data from a longitudinal AI impact study
-                </div>
+                <h3 class="text-xl font-bold mb-4 text-slate-900 dark:text-white">AI 对开发者影响的纵向研究初步数据公布</h3>
+                <p class="text-slate-600 dark:text-slate-300 leading-relaxed mb-4">使用 AI 工具的开发者代码产出量提升了约 40%，但代码质量（bug 率）略有下降。初级开发者受益最大，而高级开发者的效率提升不那么明显。</p>
+                <div class="text-sm text-slate-500 dark:text-slate-400">Score: 356 | 原文: Preliminary data from a longitudinal AI impact study</div>
             </article>
         </section>
 
-        <footer class="mt-20 pt-8 border-t border-slate-800 text-center text-slate-500 text-sm">
+        <footer class="mt-16 pt-8 border-t border-slate-200 dark:border-slate-800 text-center text-slate-500 dark:text-slate-400 text-sm">
             <p>由 AI 自动整理 · 每天北京时间 7:00 更新</p>
-            <p class="mt-2">Powered by OpenClaw + MiniMax M2.5</p>
+            <p class="mt-2"><a href="/" class="text-blue-500 hover:text-blue-400">← 返回首页</a></p>
         </footer>
     </div>
+    <script>
+        document.getElementById('theme-toggle').addEventListener('click', function(){
+            if(document.documentElement.classList.contains('dark')){
+                document.documentElement.classList.remove('dark');
+                localStorage.theme = 'light';
+            }else{
+                document.documentElement.classList.add('dark');
+                localStorage.theme = 'dark';
+            }
+        });
+    </script>
 </body>
 </html>
