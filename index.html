@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI 科技简报 | 2026年3月11日</title>
+    <title>AI 科技简报 | 每日 AI 新闻</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,129 +21,54 @@
                 每日 AI 科技简报
             </div>
             <h1 class="text-5xl font-bold mb-4 bg-gradient-to-r from-white to-slate-400 bg-clip-text text-transparent">
-                2026年3月11日
+                AI News Daily
             </h1>
-            <p class="text-slate-400 text-lg">来源：Hacker News + 海外科技媒体</p>
+            <p class="text-slate-400 text-lg max-w-2xl mx-auto">
+                每天早上 7:00（北京时间）自动更新。精选海外科技媒体 & Hacker News 热门 AI 新闻，翻译+解读。
+            </p>
         </header>
 
-        <!-- 今日洞察 -->
-        <section class="mb-16">
-            <div class="bg-gradient-to-r from-amber-500/10 to-orange-500/10 border border-amber-500/30 rounded-2xl p-8">
-                <h2 class="text-xl font-bold text-amber-300 mb-4 flex items-center gap-2">
-                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M11 3a1 1 0 10-2 0v1a1 1 0 102 0V3zM15.657 5.757a1 1 0 00-1.414-1.414l-.707.707a1 1 0 001.414 1.414l.707-.707zM18 10a1 1 0 01-1 1h-1a1 1 0 110-2h1a1 1 0 011 1zM5.05 6.464A1 1 0 106.464 5.05l-.707-.707a1 1 0 00-1.414 1.414l.707.707zM5 10a1 1 0 01-1 1H3a1 1 0 110-2h1a1 1 0 011 1zM8 16v-1h4v1a2 2 0 11-4 0zM12 14c.015-.34.208-.646.477-.859a4 4 0 10-4.954 0c.27.213.462.519.476.859h4.002z"/></svg>
-                    今日洞察
-                </h2>
-                <div class="space-y-4 text-slate-300 leading-relaxed">
-                    <p><strong class="text-amber-200">三条主线：</strong></p>
-                    <ul class="list-disc list-inside space-y-2 ml-2">
-                        <li><strong class="text-amber-200">企业开始反思 AI 辅助编码的可靠性</strong> — Amazon 的新政策是一个标志性事件</li>
-                        <li><strong class="text-amber-200">AI 从语言模型走向物理世界模型</strong> — LeCun 的 10 亿融资是最大胆的尝试</li>
-                        <li><strong class="text-amber-200">端侧推理正在爆发</strong> — Apple Silicon + 本地模型正在打开新市场</li>
-                    </ul>
+        <!-- News List -->
+        <section>
+            <h2 class="text-2xl font-bold text-slate-200 mb-8 flex items-center gap-3">
+                <span class="w-1 h-8 bg-blue-500 rounded-full"></span>
+                新闻存档
+            </h2>
+
+            <div class="space-y-4">
+                <!-- 2026-03-11 -->
+                <a href="news/2026-03-11.html" class="block bg-slate-800/50 rounded-xl p-6 border border-slate-700/50 hover:border-blue-500/50 hover:bg-slate-800/80 transition-all group">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-white group-hover:text-blue-400 transition-colors">
+                                2026 年 3 月 11 日
+                            </h3>
+                            <p class="text-slate-400 mt-1">
+                                Amazon 要求高级工程师审批 AI 代码 · Yann LeCun 筹集 10 亿美元 · Debian 社区对 AI 贡献保持中立 · ...
+                            </p>
+                        </div>
+                        <span class="text-blue-500 group-hover:translate-x-1 transition-transform">→</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section class="mt-16 pt-8 border-t border-slate-800">
+            <div class="bg-gradient-to-r from-slate-800/50 to-slate-800/30 rounded-2xl p-8">
+                <h3 class="text-lg font-bold text-slate-200 mb-4">关于这个项目</h3>
+                <div class="text-slate-400 space-y-2 text-sm">
+                    <p>• 新闻源：Hacker News、Ars Technica、Wired 等海外权威科技媒体</p>
+                    <p>• 翻译：AI 实时翻译（信达雅，保留技术名词）</p>
+                    <p>• 更新：每天北京时间 7:00 自动抓取生成</p>
+                    <p>• 托管：Cloudflare Pages</p>
+                    <p>• 技术：OpenClaw + MiniMax M2.5</p>
                 </div>
             </div>
         </section>
 
-        <!-- News List -->
-        <section class="space-y-8">
-            <h2 class="text-2xl font-bold text-slate-200 mb-8 flex items-center gap-3">
-                <span class="w-1 h-8 bg-blue-500 rounded-full"></span>
-                Top 6 新闻
-            </h2>
-
-            <!-- News 1 -->
-            <article class="bg-slate-800/50 rounded-2xl p-8 border border-slate-700/50 hover:border-blue-500/50 transition-all">
-                <div class="flex items-start justify-between gap-4 mb-4">
-                    <span class="text-4xl font-bold text-blue-500">1</span>
-                    <a href="https://arstechnica.com/ai/2026/03/after-outages-amazon-to-make-senior-engineers-sign-off-on-ai-assisted-changes/" target="_blank" class="text-blue-400 hover:text-blue-300 text-sm">Ars Technica →</a>
-                </div>
-                <h3 class="text-xl font-bold mb-4 text-white">Amazon 要求高级工程师审批 AI 辅助代码变更</h3>
-                <p class="text-slate-300 leading-relaxed mb-4">
-                    Amazon 在连续发生多次大规模服务中断后，开始收紧 AI 辅助编码的审批流程。这反映出 tech giants 对 AI 生成代码可靠性的担忧正在从口号变为实际行动。值得关注的是，这次要求"高级工程师"而非普通开发者来审批，可能意味着公司内部已经意识到 AI 代码助手在复杂生产环境中的局限性。这对 Cursor、GitHub Copilot 等工具的企业级采用是一个警示信号。
-                </p>
-                <div class="text-sm text-slate-500">
-                    <span class="text-amber-400">原文:</span> After outages, Amazon to make senior engineers sign off on AI-assisted changes
-                </div>
-            </article>
-
-            <!-- News 2 -->
-            <article class="bg-slate-800/50 rounded-2xl p-8 border border-slate-700/50 hover:border-blue-500/50 transition-all">
-                <div class="flex items-start justify-between gap-4 mb-4">
-                    <span class="text-4xl font-bold text-blue-500">2</span>
-                    <a href="https://www.wired.com/story/yann-lecun-raises-dollar1-billion-to-build-ai-that-understands-the-physical-world/" target="_blank" class="text-blue-400 hover:text-blue-300 text-sm">Wired →</a>
-                </div>
-                <h3 class="text-xl font-bold mb-4 text-white">Yann LeCun 筹集 10 亿美元构建理解物理世界的 AI</h3>
-                <p class="text-slate-300 leading-relaxed mb-4">
-                    LeCun 一直批评当前 LLM 的路线，这次他筹集到 10 亿美元真金白银，说明他不仅有想法，还有执行力。这笔资金将投向"理解物理世界"的 AI 系统，目标是突破当前大语言模型只能处理文本的困局。如果成功，可能开启 AI 的新范式——从"语言模型"到"世界模型"。Meta 内部的 AI 方向是否会被 LeCun 的新公司带跑，值得观察。
-                </p>
-                <div class="text-sm text-slate-500">
-                    <span class="text-amber-400">原文:</span> Yann LeCun raises $1B to build AI that understands the physical world
-                </div>
-            </article>
-
-            <!-- News 3 -->
-            <article class="bg-slate-800/50 rounded-2xl p-8 border border-slate-700/50 hover:border-blue-500/50 transition-all">
-                <div class="flex items-start justify-between gap-4 mb-4">
-                    <span class="text-4xl font-bold text-blue-500">3</span>
-                    <a href="https://lwn.net/SubscriberLink/1061544/125f911834966dd0/" target="_blank" class="text-blue-400 hover:text-blue-300 text-sm">LWN.net →</a>
-                </div>
-                <h3 class="text-xl font-bold mb-4 text-white">Debian 社区对 AI 生成贡献保持中立</h3>
-                <p class="text-slate-300 leading-relaxed mb-4">
-                    Debian 作为最老牌的开源社区之一，选择"不决定"本身就是一种态度。这说明开源界对 AI 代码贡献的版权、版权归属、质量把控等问题还没有共识。相比之下，Linux Kernel 已经在讨论如何标注 AI 辅助代码。这种社区层面的迷茫期可能还会持续 1-2 年，直到出现标杆性的案例或法律判例。
-                </p>
-                <div class="text-sm text-slate-500">
-                    <span class="text-amber-400">原文:</span> Debian decides not to decide on AI-generated contributions
-                </div>
-            </article>
-
-            <!-- News 4 -->
-            <article class="bg-slate-800/50 rounded-2xl p-8 border border-slate-700/50 hover:border-blue-500/50 transition-all">
-                <div class="flex items-start justify-between gap-4 mb-4">
-                    <span class="text-4xl font-bold text-blue-500">4</span>
-                    <a href="https://med.stanford.edu/news/all-news/2026/02/universal-vaccine.html" target="_blank" class="text-blue-400 hover:text-blue-300 text-sm">Stanford Medicine →</a>
-                </div>
-                <h3 class="text-xl font-bold mb-4 text-white">斯坦福推出通用疫苗，可预防呼吸道感染和过敏</h3>
-                <p class="text-slate-300 leading-relaxed mb-4">
-                    这不是纯 AI 新闻，但技术含量极高。斯坦福的突破性在于用 AI 加速了抗原设计流程，将原本需要数年的研发周期大幅压缩。这体现了 AI for Science 的真正价值——不是取代科学家，而是让科学家的想象力得以快速验证。
-                </p>
-                <div class="text-sm text-slate-500">
-                    <span class="text-amber-400">原文:</span> Universal vaccine against respiratory infections and allergens
-                </div>
-            </article>
-
-            <!-- News 5 -->
-            <article class="bg-slate-800/50 rounded-2xl p-8 border border-slate-700/50 hover:border-blue-500/50 transition-all">
-                <div class="flex items-start justify-between gap-4 mb-4">
-                    <span class="text-4xl font-bold text-blue-500">5</span>
-                    <a href="https://github.com/RunanywhereAI/rcli" target="_blank" class="text-blue-400 hover:text-blue-300 text-sm">GitHub →</a>
-                </div>
-                <h3 class="text-xl font-bold mb-4 text-white">YC W26: RunAnywhere — Apple Silicon 上的高速 AI 推理</h3>
-                <p class="text-slate-300 leading-relaxed mb-4">
-                    Apple Silicon (M 系列芯片) 在本地 AI 推理上的潜力一直被低估。RunAnywhere 获得 YC 投资，说明资本市场看好"本地推理"这个方向。随着 llama.cpp、MLX 等生态成熟，端侧 AI 推理正在从极客玩具变成可落地的产品。对于个人开发者和小型团队，本地运行 7B-14B 模型正在变得足够快且便宜。
-                </p>
-                <div class="text-sm text-slate-500">
-                    <span class="text-amber-400">原文:</span> Launch HN: RunAnywhere (YC W26) – Faster AI Inference on Apple Silicon
-                </div>
-            </article>
-
-            <!-- News 6 -->
-            <article class="bg-slate-800/50 rounded-2xl p-8 border border-slate-700/50 hover:border-blue-500/50 transition-all">
-                <div class="flex items-start justify-between gap-4 mb-4">
-                    <span class="text-4xl font-bold text-blue-500">6</span>
-                    <a href="https://ankursethi.com/blog/programming-language-claude-code/" target="_blank" class="text-blue-400 hover:text-blue-300 text-sm">Ankur Sethi →</a>
-                </div>
-                <h3 class="text-xl font-bold mb-4 text-white">我用 Claude Code 构建了一门编程语言</h3>
-                <p class="text-slate-300 leading-relaxed mb-4">
-                    一个开发者完全用 AI（Claude Code）从零开始写出了一门编程语言。这意味着 AI 已经能够处理"设计 + 实现 + 测试"的完整工程循环。虽然这个语言本身可能很简陋，但它验证了 Vibe Coding 的边界——如果你能清晰表达需求，AI 真的可以从零构建一个完整项目。这对独立开发者是巨大的生产力释放。
-                </p>
-                <div class="text-sm text-slate-500">
-                    <span class="text-amber-400">原文:</span> I built a programming language using Claude Code
-                </div>
-            </article>
-        </section>
-
         <!-- Footer -->
-        <footer class="mt-20 pt-8 border-t border-slate-800 text-center text-slate-500 text-sm">
+        <footer class="mt-16 pt-8 border-t border-slate-800 text-center text-slate-500 text-sm">
             <p>由 AI 自动整理 · 每天北京时间 7:00 更新</p>
             <p class="mt-2">Powered by OpenClaw + MiniMax M2.5</p>
         </footer>
