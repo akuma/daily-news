@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI 科技简报 | 2026年3月14日</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = { darkMode: 'class' }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>body{font-family:'Noto Sans SC',sans-serif}</style>
+    <script>
+        (function(){
+            var t = localStorage.theme;
+            if(t === 'dark' || (!t && window.matchMedia('(prefers-color-scheme:dark)').matches)){
+                document.documentElement.classList.add('dark');
+            }
+        })();
+    </script>
+</head>
+<body class="bg-gradient-to-br from-slate-50 via-slate-100 to-slate-200 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900 min-h-screen text-slate-900 dark:text-white transition-colors duration-300">
+    <div class="max-w-4xl mx-auto px-6 py-12">
+        <header class="text-center mb-16">
+            <div class="flex justify-between items-center mb-8">
+                <a href="/" class="text-blue-500 hover:text-blue-400 text-sm">← 返回首页</a>
+                <button id="theme-toggle" type="button" class="p-2 rounded-full bg-slate-200 dark:bg-slate-700 hover:bg-slate-300 dark:hover:bg-slate-600 transition-colors">
+                    <svg class="w-5 h-5 text-amber-500 dark:block hidden" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"/></svg>
+                    <svg class="w-5 h-5 text-slate-600 dark:hidden block" fill="currentColor" viewBox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"/></svg>
+                </button>
+            </div>
+            <div class="inline-flex items-center gap-2 bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 px-4 py-2 rounded-full text-sm mb-6">
+                <span class="w-2 h-2 bg-blue-500 rounded-full animate-pulse"></span>
+                每日 AI 科技简报
+            </div>
+            <h1 class="text-4xl font-bold mb-4 text-slate-900 dark:text-white">2026年3月14日</h1>
+        </header>
+
+        <section class="space-y-8">
+            <div class="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800 rounded-2xl p-6">
+                <h3 class="text-lg font-bold text-amber-800 dark:text-amber-300 mb-3">今日洞察</h3>
+                <div class="text-amber-700 dark:text-amber-400 space-y-2">
+                    <p><strong class="text-amber-600 dark:text-amber-300">三条主线：</strong></p>
+                    <ul class="list-disc list-inside space-y-2 ml-2">
+                        <li><strong class="text-amber-600 dark:text-amber-300">xAI 第三次重建： Musk 的 AI 编程梦碎又重来</strong> — 两次推翻说明技术路线有问题</li>
+                        <li><strong class="text-amber-600 dark:text-amber-300">AI 幻觉正在进入现实世界伤害</strong> — 律师开始以"大规模伤亡风险"起诉 AI 公司</li>
+                        <li><strong class="text-amber-600 dark:text-amber-300">GitHub 供应链攻击：开源生态的隐形危机</strong> — 不可见代码注入是新技术威胁</li>
+                    </ul>
+                </div>
+            </div>
+
+            <article class="bg-white dark:bg-slate-800/50 rounded-2xl p-8 border border-slate-200 dark:border-slate-700/50">
+                <div class="flex items-start justify-between gap-4 mb-4">
+                    <span class="text-3xl font-bold text-blue-500">1</span>
+                    <a href="https://techcrunch.com/2026/03/13/not-built-right-the-first-time-musks-xai-is-starting-over-again-again/" target="_blank" class="text-blue-500 hover:text-blue-400 text-sm">TechCrunch →</a>
+                </div>
+                <h3 class="text-xl font-bold mb-4 text-slate-900 dark:text-white">Musk 的 xAI 第三次重建 AI 编程工具</h3>
+                <p class="text-slate-600 dark:text-slate-300 leading-relaxed mb-4">xAI 的 AI 编码工具已经是第三次推倒重来了。Musk 这次从 Cursor 挖来了两位高管，但"第一次就没建好"的评价表明技术路线存在根本问题。这不仅是 xAI 的尴尬，也是整个 AI 编程赛道的警钟——即使有最多的资金和算力，方向错了也白烧。</p>
+                <div class="text-sm text-slate-500 dark:text-slate-400">原文: 'Not built right the first time' — Musk's xAI is starting over again, again</div>
+            </article>
+
+            <article class="bg-white dark:bg-slate-800/50 rounded-2xl p-8 border border-slate-200 dark:border-slate-700/50">
+                <div class="flex items-start justify-between gap-4 mb-4">
+                    <span class="text-3xl font-bold text-blue-500">2</span>
+                    <a href="https://techcrunch.com/2026/03/13/lawyer-behind-ai-psychosis-cases-warns-of-mass-casualty-risks/" target="_blank" class="text-blue-500 hover:text-blue-400 text-sm">TechCrunch →</a>
+                </div>
+                <h3 class="text-xl font-bold mb-4 text-slate-900 dark:text-white">律师警告 AI 聊天机器人正在导致大规模伤亡风险</h3>
+                <p class="text-slate-600 dark:text-slate-300 leading-relaxed mb-4">这位曾起诉 AI 导致精神病的律师，现在将矛头指向"大规模伤亡"——AI 正在从"心理伤害"升级到"物理伤害"。技术跑在监管前面的速度令人担忧，当 AI 能直接影响现实世界时，之前的"幻觉"问题就不再是玩笑了。</p>
+                <div class="text-sm text-slate-500 dark:text-slate-400">原文: Lawyer behind AI psychosis cases warns of mass casualty risks</div>
+            </article>
+
+            <article class="bg-white dark:bg-slate-800/50 rounded-2xl p-8 border border-slate-200 dark:border-slate-700/50">
+                <div class="flex items-start justify-between gap-4 mb-4">
+                    <span class="text-3xl font-bold text-blue-500">3</span>
+                    <a href="https://www.wired.com/story/google-ai-searches-love-to-refer-you-back-to-google/" target="_blank" class="text-blue-500 hover:text-blue-400 text-sm">Wired →</a>
+                </div>
+                <h3 class="text-xl font-bold mb-4 text-slate-900 dark:text-white">Google AI 搜索结果偏爱把用户推回 Google</h3>
+                <p class="text-slate-600 dark:text-slate-300 leading-relaxed mb-4">Google AI Overview 疯狂引用 Google 自家产品，这不仅是利益冲突，更是信息茧房的升级版。当搜索引擎本身成为内容提供者，所谓的"AI 搜索"还有多少独立性？这波操作反而给 Perplexity 和 Arc 送子弹。</p>
+                <div class="text-sm text-slate-500 dark:text-slate-400">原文: Google's AI Search Results Love to Refer You Back to Google</div>
+            </article>
+
+            <article class="bg-white dark:bg-slate-800/50 rounded-2xl p-8 border border-slate-200 dark:border-slate-700/50">
+                <div class="flex items-start justify-between gap-4 mb-4">
+                    <span class="text-3xl font-bold text-blue-500">4</span>
+                    <a href="https://www.wired.com/story/china-is-going-all-in-on-openclaw/" target="_blank" class="text-blue-500 hover:text-blue-400 text-sm">Wired →</a>
+                </div>
+                <h3 class="text-xl font-bold mb-4 text-slate-900 dark:text-white">中国开源模型爆发：AI 公司的淘金热</h3>
+                <p class="text-slate-600 dark:text-slate-300 leading-relaxed mb-4">中国 AI 公司正在开源模型领域疯狂撒钱，DeepSeek 们正在重新定义"开源"的含义——不仅是开放权重，更是开放的生态。硅谷的"Closed AI"叙事正在被中国玩家改写。</p>
+                <div class="text-sm text-slate-500 dark:text-slate-400">原文: China's OpenClaw Boom Is a Gold Rush for AI Companies</div>
+            </article>
+
+            <article class="bg-white dark:bg-slate-800/50 rounded-2xl p-8 border border-slate-200 dark:border-slate-700/50">
+                <div class="flex items-start justify-between gap-4 mb-4">
+                    <span class="text-3xl font-bold text-blue-500">5</span>
+                    <a href="https://www.wired.com/story/gamers-ai-nightmares-are-coming-true/" target="_blank" class="text-blue-500 hover:text-blue-400 text-sm">Wired →</a>
+                </div>
+                <h3 class="text-xl font-bold mb-4 text-slate-900 dark:text-white">游戏玩家的 AI 噩梦正在变成现实</h3>
+                <p class="text-slate-600 dark:text-slate-300 leading-relaxed mb-4">从 NPC 智商税到 AI 外挂，游戏玩家最怕的两件事正在应验。AI 生成的 NPC 开始"假装有灵魂"，而 AI 作弊工具已经进化到人类无法检测的水平。游戏正在变成"真人与 AI"的罗生门。</p>
+                <div class="text-sm text-slate-500 dark:text-slate-400">原文: Gamers' Worst Nightmares About AI Are Coming True</div>
+            </article>
+
+            <article class="bg-white dark:bg-slate-800/50 rounded-2xl p-8 border border-slate-200 dark:border-slate-700/50">
+                <div class="flex items-start justify-between gap-4 mb-4">
+                    <span class="text-3xl font-bold text-blue-500">6</span>
+                    <a href="https://arstechnica.com/security/2026/03/supply-chain-attack-using-invisible-code-hits-github-and-other-repositories/" target="_blank" class="text-blue-500 hover:text-blue-400 text-sm">Ars Technica →</a>
+                </div>
+                <h3 class="text-xl font-bold mb-4 text-slate-900 dark:text-white">GitHub 遭受供应链攻击：不可见代码注入</h3>
+                <p class="text-slate-600 dark:text-slate-300 leading-relaxed mb-4">攻击者使用"不可见代码"——人眼完全看不到的字符——注入供应链。这是比传统恶意代码更恐怖的攻击方式，因为即使是资深开发者用肉眼 code review 也完全发现不了。开源供应链的安全性需要重新审视。</p>
+                <div class="text-sm text-slate-500 dark:text-slate-400">原文: Supply-chain attack using invisible code hits GitHub and other repositories</div>
+            </article>
+        </section>
+
+        <footer class="mt-16 pt-8 border-t border-slate-200 dark:border-slate-800 text-center text-slate-500 dark:text-slate-400 text-sm">
+            <p>由 AI 自动整理 · 每天北京时间 7:00 更新</p>
+        </footer>
+    </div>
+    <script>
+        document.getElementById('theme-toggle').addEventListener('click', function(){
+            if(document.documentElement.classList.contains('dark')){
+                document.documentElement.classList.remove('dark');
+                localStorage.theme = 'light';
+            }else{
+                document.documentElement.classList.add('dark');
+                localStorage.theme = 'dark';
+            }
+        });
+    </script>
+</body>
+</html>
