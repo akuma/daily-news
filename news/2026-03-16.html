@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI 科技简报 | 2026年3月16日</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = { darkMode: 'class' }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>body{font-family:'Noto Sans SC',sans-serif}</style>
+    <script>
+        (function(){
+            var t = localStorage.theme;
+            if(t === 'dark' || (!t && window.matchMedia('(prefers-color-scheme:dark)').matches)){
+                document.documentElement.classList.add('dark');
+            }
+        })();
+    </script>
+</head>
+<body class="bg-gradient-to-br from-slate-50 via-slate-100 to-slate-200 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900 min-h-screen text-slate-900 dark:text-white transition-colors duration-300">
+    <div class="max-w-4xl mx-auto px-6 py-12">
+        <header class="text-center mb-16">
+            <div class="flex justify-between items-center mb-8">
+                <a href="/" class="text-blue-500 hover:text-blue-400 text-sm">← 返回首页</a>
+                <button id="theme-toggle" type="button" class="p-2 rounded-full bg-slate-200 dark:bg-slate-700 hover:bg-slate-300 dark:hover:bg-slate-600 transition-colors">
+                    <svg class="w-5 h-5 text-amber-500 dark:block hidden" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"/></svg>
+                    <svg class="w-5 h-5 text-slate-600 dark:hidden block" fill="currentColor" viewBox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"/></svg>
+                </button>
+            </div>
+            <div class="inline-flex items-center gap-2 bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 px-4 py-2 rounded-full text-sm mb-6">
+                <span class="w-2 h-2 bg-blue-500 rounded-full animate-pulse"></span>
+                每日 AI 科技简报
+            </div>
+            <h1 class="text-4xl font-bold mb-4 text-slate-900 dark:text-white">2026年3月16日</h1>
+        </header>
+
+        <section class="space-y-8">
+            <div class="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800 rounded-2xl p-6">
+                <h3 class="text-lg font-bold text-amber-800 dark:text-amber-300 mb-3">今日洞察</h3>
+                <div class="text-amber-700 dark:text-amber-400 space-y-2">
+                    <p><strong class="text-amber-600 dark:text-amber-300">三条主线：</strong></p>
+                    <ul class="list-disc list-inside space-y-2 ml-2">
+                        <li><strong class="text-amber-600 dark:text-amber-300">AI 初创泡沫正在被戳破</strong> — Google 和 Accel 从 4000 份印度 AI 创业申请中只选出 5 家，70% 都是"套壳"产品</li>
+                        <li><strong class="text-amber-600 dark:text-amber-300">AI 安全问题从个体走向群体</strong> — 律师警告 AI 聊天机器人已开始出现在大规模伤亡案件中</li>
+                        <li><strong class="text-amber-600 dark:text-amber-300">企业 AI 正在从实验走向规模化</strong> — Rakuten 用 Codex 将修复速度提升一倍，Wayfair 用 AI 提升目录准确性</li>
+                    </ul>
+                </div>
+            </div>
+
+            <article class="bg-white dark:bg-slate-800/50 rounded-2xl p-8 border border-slate-200 dark:border-slate-700/50">
+                <div class="flex items-start justify-between gap-4 mb-4">
+                    <span class="text-3xl font-bold text-blue-500">1</span>
+                    <a href="https://techcrunch.com/2026/03/15/google-and-accel-cut-through-wrappers-in-4000-ai-startup-pitches-to-pick-five-tied-to-india/" target="_blank" class="text-blue-500 hover:text-blue-400 text-sm">TechCrunch →</a>
+                </div>
+                <h3 class="text-xl font-bold mb-4 text-slate-900 dark:text-white">Google 与 Accel 印度加速器：4000 份 AI 创业申请中选出 5 家，无一是"套壳"</h3>
+                <p class="text-slate-600 dark:text-slate-300 leading-relaxed mb-4">Google 和 Accel 在审查了超过 4000 份与印度相关的 AI 创业申请后，只选出了 5 家进入他们的 Atoms 计划。他们表示约 70% 的 AI 创业申请都是"套壳"（wrapper）产品——即那些只是简单包装现有 AI API 而缺乏真正技术创新 的应用。这反映了投资人正在变得更加挑剔。</p>
+                <div class="text-sm text-slate-500 dark:text-slate-400">原文: Google, Accel India accelerator chooses 5 startups and none are 'AI wrappers'</div>
+            </article>
+
+            <article class="bg-white dark:bg-slate-800/50 rounded-2xl p-8 border border-slate-200 dark:border-slate-700/50">
+                <div class="flex items-start justify-between gap-4 mb-4">
+                    <span class="text-3xl font-bold text-blue-500">2</span>
+                    <a href="https://techcrunch.com/2026/03/15/lawyer-behind-ai-psychosis-cases-warns-of-mass-casualty-risks/" target="_blank" class="text-blue-500 hover:text-blue-400 text-sm">TechCrunch →</a>
+                </div>
+                <h3 class="text-xl font-bold mb-4 text-slate-900 dark:text-white">AI 精神病案律师警告：大模型开始出现在大规模伤亡案件中</h3>
+                <p class="text-slate-600 dark:text-slate-300 leading-relaxed mb-4">多年以来，AI 聊天机器人已被指与多起自杀事件相关。如今，一位律师表示它们也开始出现在大规模伤亡案件中。这标志着 AI 安全问题正在从个体心理伤害升级为社会层面的公共安全威胁，技术发展的速度远超安全保障的跟进。</p>
+                <div class="text-sm text-slate-500 dark:text-slate-400">原文: Lawyer behind AI psychosis cases warns of mass casualty risks</div>
+            </article>
+
+            <article class="bg-white dark:bg-slate-800/50 rounded-2xl p-8 border border-slate-200 dark:border-slate-700/50">
+                <div class="flex items-start justify-between gap-4 mb-4">
+                    <span class="text-3xl font-bold text-blue-500">3</span>
+                    <a href="https://techcrunch.com/2026/03/15/wiz-investor-unpacks-googles-32b-acquisition/" target="_blank" class="text-blue-500 hover:text-blue-400 text-sm">TechCrunch →</a>
+                </div>
+                <h3 class="text-xl font-bold mb-4 text-slate-900 dark:text-white">Wiz 投资人解析 Google 320 亿美元收购案</h3>
+                <p class="text-slate-600 dark:text-slate-300 leading-relaxed mb-4">Index Ventures 的 Shardul Shah 详解了 Google 历史上最大收购案背后的逻辑。320 亿美元收购 Wiz 不仅是对云安全能力的投资，更是 Google 在 AI 时代巩固其云基础设施战略的关键一步。</p>
+                <div class="text-sm text-slate-500 dark:text-slate-400">原文: Wiz investor unpacks Google's $32B acquisition</div>
+            </article>
+
+            <article class="bg-white dark:bg-slate-800/50 rounded-2xl p-8 border border-slate-200 dark:border-slate-700/50">
+                <div class="flex items-start justify-between gap-4 mb-4">
+                    <span class="text-3xl font-bold text-blue-500">4</span>
+                    <a href="https://techcrunch.com/2026/03/14/meta-reportedly-considering-layoffs-that-could-affect-20-of-the-company/" target="_blank" class="text-blue-500 hover:text-blue-400 text-sm">TechCrunch →</a>
+                </div>
+                <h3 class="text-xl font-bold mb-4 text-slate-900 dark:text-white">Meta 考虑裁员可能影响公司 20% 员工</h3>
+                <p class="text-slate-600 dark:text-slate-300 leading-relaxed mb-4">Meta 正在考虑新一轮裁员，可能影响公司 20% 的员工。这些裁员将帮助 Facebook 的母公司抵消其在 AI 基础设施、AI 相关收购和招聘方面的激进投资。AI 投入巨大，但回报周期尚未明确，科技巨头们开始通过优化人员来平衡财务。</p>
+                <div class="text-sm text-slate-500 dark:text-slate-400">原文: Meta reportedly considering layoffs that could affect 20% of the company</div>
+            </article>
+
+            <article class="bg-white dark:bg-slate-800/50 rounded-2xl p-8 border border-slate-200 dark:border-slate-700/50">
+                <div class="flex items-start justify-between gap-4 mb-4">
+                    <span class="text-3xl font-bold text-blue-500">5</span>
+                    <a href="https://openai.com/index/rakuten" target="_blank" class="text-blue-500 hover:text-blue-400 text-sm">OpenAI →</a>
+                </div>
+                <h3 class="text-xl font-bold mb-4 text-slate-900 dark:text-white">乐天利用 Codex 将问题修复速度提升一倍</h3>
+                <p class="text-slate-600 dark:text-slate-300 leading-relaxed mb-4">乐天使用 OpenAI 的编码智能体 Codex 后，MTTR（平均修复时间）减少了 50%，CI/CD 审核实现自动化，全栈构建可以在数周内完成。Codex 不仅能写代码，还能理解整个软件开发生命周期。</p>
+                <div class="text-sm text-slate-500 dark:text-slate-400">原文: Rakuten fixes issues twice as fast with Codex</div>
+            </article>
+
+            <article class="bg-white dark:bg-slate-800/50 rounded-2xl p-8 border border-slate-200 dark:border-slate-700/50">
+                <div class="flex items-start justify-between gap-4 mb-4">
+                    <span class="text-3xl font-bold text-blue-500">6</span>
+                    <a href="https://openai.com/index/designing-agents-to-resist-prompt-injection" target="_blank" class="text-blue-500 hover:text-blue-400 text-sm">OpenAI →</a>
+                </div>
+                <h3 class="text-xl font-bold mb-4 text-slate-900 dark:text-white">设计抗提示注入的 AI 智能体</h3>
+                <p class="text-slate-600 dark:text-slate-300 leading-relaxed mb-4">ChatGPT 如何防御提示注入和社会工程攻击？OpenAI 披露了其通过约束风险行为和保护智能体工作流中的敏感数据来提升安全性的方法。提示注入正在成为 AI 系统的最大安全隐患之一。</p>
+                <div class="text-sm text-slate-500 dark:text-slate-400">原文: Designing AI agents to resist prompt injection</div>
+            </article>
+        </section>
+
+        <footer class="mt-16 pt-8 border-t border-slate-200 dark:border-slate-800 text-center text-slate-500 dark:text-slate-400 text-sm">
+            <p>由 AI 自动整理 · 每天北京时间 7:00 更新</p>
+        </footer>
+    </div>
+    <script>
+        document.getElementById('theme-toggle').addEventListener('click', function(){
+            if(document.documentElement.classList.contains('dark')){
+                document.documentElement.classList.remove('dark');
+                localStorage.theme = 'light';
+            }else{
+                document.documentElement.classList.add('dark');
+                localStorage.theme = 'dark';
+            }
+        });
+    </script>
+</body>
+</html>
