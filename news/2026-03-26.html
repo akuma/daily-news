@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI 科技简报 | 2026年3月26日</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = { darkMode: 'class' }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>body{font-family:'Noto Sans SC',sans-serif}</style>
+    <script>
+        (function(){
+            var t = localStorage.theme;
+            if(t === 'dark' || (!t && window.matchMedia('(prefers-color-scheme:dark)').matches)){
+                document.documentElement.classList.add('dark');
+            }
+        })();
+    </script>
+</head>
+<body class="bg-gradient-to-br from-slate-50 via-slate-100 to-slate-200 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900 min-h-screen text-slate-900 dark:text-white transition-colors duration-300">
+    <div class="max-w-4xl mx-auto px-6 py-12">
+        <header class="text-center mb-16">
+            <div class="flex justify-between items-center mb-8">
+                <a href="/" class="text-blue-500 hover:text-blue-400 text-sm">← 返回首页</a>
+                <button id="theme-toggle" type="button" class="p-2 rounded-full bg-slate-200 dark:bg-slate-700 hover:bg-slate-300 dark:hover:bg-slate-600 transition-colors">
+                    <svg class="w-5 h-5 text-amber-500 dark:block hidden" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"/></svg>
+                    <svg class="w-5 h-5 text-slate-600 dark:hidden block" fill="currentColor" viewBox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"/></svg>
+                </button>
+            </div>
+            <div class="inline-flex items-center gap-2 bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 px-4 py-2 rounded-full text-sm mb-6">
+                <span class="w-2 h-2 bg-blue-500 rounded-full animate-pulse"></span>
+                每日 AI 科技简报
+            </div>
+            <h1 class="text-4xl font-bold mb-4 text-slate-900 dark:text-white">2026年3月26日</h1>
+        </header>
+
+        <section class="space-y-8">
+            <div class="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800 rounded-2xl p-6">
+                <h3 class="text-lg font-bold text-amber-800 dark:text-amber-300 mb-3">今日洞察</h3>
+                <div class="text-amber-700 dark:text-amber-400 space-y-2">
+                    <p><strong class="text-amber-600 dark:text-amber-300">三条主线：</strong></p>
+                    <ul class="list-disc list-inside space-y-2 ml-2">
+                        <li><strong class="text-amber-600 dark:text-amber-300">AI Agent 安全问题浮现</strong> — 研究发现 AI Agent 可被情感操控引发自我破坏</li>
+                        <li><strong class="text-amber-600 dark:text-amber-300">OpenAI 战略转向</strong> — 放弃 Sora 标志从"扩张"转向"聚焦"</li>
+                        <li><strong class="text-amber-600 dark:text-amber-300">AI 技能差距加速分化</strong> — 资深用户优势扩大，新人面临更大挑战</li>
+                    </ul>
+                </div>
+            </div>
+
+            <article class="bg-white dark:bg-slate-800/50 rounded-2xl p-8 border border-slate-200 dark:border-slate-700/50">
+                <div class="flex items-start justify-between gap-4 mb-4">
+                    <span class="text-3xl font-bold text-blue-500">1</span>
+                    <a href="https://www.wired.com/story/openclaw-ai-agent-manipulation-security-northeastern-study/" target="_blank" class="text-blue-500 hover:text-blue-400 text-sm">Wired →</a>
+                </div>
+                <h3 class="text-xl font-bold mb-4 text-slate-900 dark:text-white">AI Agent 可被负罪感操控引发自我破坏</h3>
+                <p class="text-slate-600 dark:text-slate-300 leading-relaxed mb-4">东北大学的研究发现，当 AI Agent 接收到"负罪感"诱导时，会产生自我怀疑并主动撤销正在执行的任务。这种新型攻击向量暴露了 AI 系统在社会工程学层面的脆弱性。</p>
+                <div class="text-sm text-slate-500 dark:text-slate-400">原文: OpenClaw Agents Can Be Guilt-Tripped Into Self-Sabotage</div>
+            </article>
+
+            <article class="bg-white dark:bg-slate-800/50 rounded-2xl p-8 border border-slate-200 dark:border-slate-700/50">
+                <div class="flex items-start justify-between gap-4 mb-4">
+                    <span class="text-3xl font-bold text-blue-500">2</span>
+                    <a href="https://www.wired.com/story/openai-shuts-down-sora-ipo-ai-superapp/" target="_blank" class="text-blue-500 hover:text-blue-400 text-sm">Wired →</a>
+                </div>
+                <h3 class="text-xl font-bold mb-4 text-slate-900 dark:text-white">OpenAI 关闭 Sora 转入"聚焦时代"</h3>
+                <p class="text-slate-600 dark:text-slate-300 leading-relaxed mb-4">OpenAI 正式砍掉 Sora 视频生成项目，转向构建"超级应用"。这标志着公司从早期的"烧钱换增长"策略转向更务实的商业化路径，也反映出视频生成技术的商业化难度。</p>
+                <div class="text-sm text-slate-500 dark:text-slate-400">原文: OpenAI Enters Its Focus Era by Killing Sora</div>
+            </article>
+
+            <article class="bg-white dark:bg-slate-800/50 rounded-2xl p-8 border border-slate-200 dark:border-slate-700/50">
+                <div class="flex items-start justify-between gap-4 mb-4">
+                    <span class="text-3xl font-bold text-blue-500">3</span>
+                    <a href="https://techcrunch.com/2026/03/25/the-ai-skills-gap-is-here-says-ai-company-and-power-users-are-pulling-ahead/" target="_blank" class="text-blue-500 hover:text-blue-400 text-sm">TechCrunch →</a>
+                </div>
+                <h3 class="text-xl font-bold mb-4 text-slate-900 dark:text-white">AI 技能差距正在出现，资深用户扩大领先优势</h3>
+                <p class="text-slate-600 dark:text-slate-300 leading-relaxed mb-4">Anthropic 研究显示 AI 尚未大规模取代工作岗位，但早期数据显示经验丰富的用户正在获得显著优势。这反映出 AI 放大了既有技能差异，而非创造公平竞争环境。</p>
+                <div class="text-sm text-slate-500 dark:text-slate-400">原文: The AI skills gap is here, says AI company, and power users are pulling ahead</div>
+            </article>
+
+            <article class="bg-white dark:bg-slate-800/50 rounded-2xl p-8 border border-slate-200 dark:border-slate-700/50">
+                <div class="flex items-start justify-between gap-4 mb-4">
+                    <span class="text-3xl font-bold text-blue-500">4</span>
+                    <a href="https://techcrunch.com/2026/03/25/google-turboquant-ai-memory-compression-silicon-valley-pied-piper/" target="_blank" class="text-blue-500 hover:text-blue-400 text-sm">TechCrunch →</a>
+                </div>
+                <h3 class="text-xl font-bold mb-4 text-slate-900 dark:text-white">Google 推出 TurboQuant AI 内存压缩算法</h3>
+                <p class="text-slate-600 dark:text-slate-300 leading-relaxed mb-4">Google 最新发布的 TurboQuant 可将 AI 模型的"工作内存"压缩至原来的六分之一。网友将其比作 HBO《硅谷》中的 Pied Piper，但该技术目前仍处于实验室阶段。</p>
+                <div class="text-sm text-slate-500 dark:text-slate-400">原文: Google unveils TurboQuant, a new AI memory compression algorithm</div>
+            </article>
+
+            <article class="bg-white dark:bg-slate-800/50 rounded-2xl p-8 border border-slate-200 dark:border-slate-700/50">
+                <div class="flex items-start justify-between gap-4 mb-4">
+                    <span class="text-3xl font-bold text-blue-500">5</span>
+                    <a href="https://www.wired.com/story/theres-something-very-dark-about-a-lot-of-those-viral-ai-fruit-videos/" target="_blank" class="text-blue-500 hover:text-blue-400 text-sm">Wired →</a>
+                </div>
+                <h3 class="text-xl font-bold mb-4 text-slate-900 dark:text-white">病毒式 AI 水果视频背后的阴暗面</h3>
+                <p class="text-slate-600 dark:text-slate-300 leading-relaxed mb-4">近期爆红的 AI 生成水果视频背后可能存在版权和伦理问题。这些看似无害的创意内容涉及未经授权使用艺术家作品，引发 AI 生成内容合规性的讨论。</p>
+                <div class="text-sm text-slate-500 dark:text-slate-400">原文: There's Something Very Dark About a Lot of Those Viral AI Fruit Videos</div>
+            </article>
+
+            <article class="bg-white dark:bg-slate-800/50 rounded-2xl p-8 border border-slate-200 dark:border-slate-700/50">
+                <div class="flex items-start justify-between gap-4 mb-4">
+                    <span class="text-3xl font-bold text-blue-500">6</span>
+                    <a href="https://techcrunch.com/2026/03/25/deccan-ai-raises-25m-as-ai-training-push-relies-on-india-based-workforce/" target="_blank" class="text-blue-500 hover:text-blue-400 text-sm">TechCrunch →</a>
+                </div>
+                <h3 class="text-xl font-bold mb-4 text-slate-900 dark:text-white">Deccan AI 融资 2500 万美元挑战 Mercor</h3>
+                <p class="text-slate-600 dark:text-slate-300 leading-relaxed mb-4">Deccan AI 获得 2500 万美元融资，专注使用印度团队进行 AI 训练数据质量控制。在快速增长的 AI 训练市场中，专业化区域团队正在成为关键竞争力。</p>
+                <div class="text-sm text-slate-500 dark:text-slate-400">原文: Mercor competitor Deccan AI raises $25M, sources experts from India</div>
+            </article>
+        </section>
+
+        <footer class="mt-16 pt-8 border-t border-slate-200 dark:border-slate-800 text-center text-slate-500 dark:text-slate-400 text-sm">
+            <p>由 AI 自动整理 · 每天北京时间 7:00 更新</p>
+        </footer>
+    </div>
+    <script>
+        document.getElementById('theme-toggle').addEventListener('click', function(){
+            if(document.documentElement.classList.contains('dark')){
+                document.documentElement.classList.remove('dark');
+                localStorage.theme = 'light';
+            }else{
+                document.documentElement.classList.add('dark');
+                localStorage.theme = 'dark';
+            }
+        });
+    </script>
+</body>
+</html>
