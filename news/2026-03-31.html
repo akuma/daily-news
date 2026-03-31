@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI 科技简报 | 2026年3月31日</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = { darkMode: 'class' }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>body{font-family:'Noto Sans SC',sans-serif}</style>
+    <script>
+        (function(){
+            var t = localStorage.theme;
+            if(t === 'dark' || (!t && window.matchMedia('(prefers-color-scheme:dark)').matches)){
+                document.documentElement.classList.add('dark');
+            }
+        })();
+    </script>
+</head>
+<body class="bg-gradient-to-br from-slate-50 via-slate-100 to-slate-200 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900 min-h-screen text-slate-900 dark:text-white transition-colors duration-300">
+    <div class="max-w-4xl mx-auto px-6 py-12">
+        <header class="text-center mb-16">
+            <div class="flex justify-between items-center mb-8">
+                <a href="/" class="text-blue-500 hover:text-blue-400 text-sm">← 返回首页</a>
+                <button id="theme-toggle" type="button" class="p-2 rounded-full bg-slate-200 dark:bg-slate-700 hover:bg-slate-300 dark:hover:bg-slate-600 transition-colors">
+                    <svg class="w-5 h-5 text-amber-500 dark:block hidden" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"/></svg>
+                    <svg class="w-5 h-5 text-slate-600 dark:hidden block" fill="currentColor" viewBox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"/></svg>
+                </button>
+            </div>
+            <div class="inline-flex items-center gap-2 bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 px-4 py-2 rounded-full text-sm mb-6">
+                <span class="w-2 h-2 bg-blue-500 rounded-full animate-pulse"></span>
+                每日 AI 科技简报
+            </div>
+            <h1 class="text-4xl font-bold mb-4 text-slate-900 dark:text-white">2026年3月31日</h1>
+        </header>
+
+        <section class="space-y-8">
+            <div class="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800 rounded-2xl p-6">
+                <h3 class="text-lg font-bold text-amber-800 dark:text-amber-300 mb-3">今日洞察</h3>
+                <div class="text-amber-700 dark:text-amber-400 space-y-2">
+                    <p><strong class="text-amber-600 dark:text-amber-300">三条主线：</strong></p>
+                    <ul class="list-disc list-inside space-y-2 ml-2">
+                        <li><strong class="text-amber-600 dark:text-amber-300">AI 信任危机浮现</strong> — Quinnipiac 调查显示AI采用上升但信任下降，15%美国人愿为AI工作</li>
+                        <li><strong class="text-amber-600 dark:text-amber-300">AI 安全成行业焦点</strong> — LiteLLM放弃争议合作方，OpenAI推出安全赏金计划</li>
+                        <li><strong class="text-amber-600 dark:text-amber-300">企业级 AI 应用深化</strong> — 谷歌"AI Works"落地英国，灾害响应领域引入AI</li>
+                    </ul>
+                </div>
+            </div>
+
+            <article class="bg-white dark:bg-slate-800/50 rounded-2xl p-8 border border-slate-200 dark:border-slate-700/50">
+                <div class="flex items-start justify-between gap-4 mb-4">
+                    <span class="text-3xl font-bold text-blue-500">1</span>
+                    <a href="https://techcrunch.com/2026/03/30/ai-work-boss-supervisor-us-quinnipiac-poll/" target="_blank" class="text-blue-500 hover:text-blue-400 text-sm">TechCrunch →</a>
+                </div>
+                <h3 class="text-xl font-bold mb-4 text-slate-900 dark:text-white">15%美国人愿意为AI老板工作</h3>
+                <p class="text-slate-600 dark:text-slate-300 leading-relaxed mb-4">Quinnipiac大学最新民调显示，15%的美国人表示愿意接受由AI程序担任直接主管的工作，AI负责分配任务和设定日程。这一数据在AI采用率上升但公众信任下降的背景下尤为值得关注，反映了年轻一代对AI管理态度的微妙转变。</p>
+                <div class="text-sm text-slate-500 dark:text-slate-400">原文: 15% of Americans say they'd be willing to work for an AI boss, according to new poll</div>
+            </article>
+
+            <article class="bg-white dark:bg-slate-800/50 rounded-2xl p-8 border border-slate-200 dark:border-slate-700/50">
+                <div class="flex items-start justify-between gap-4 mb-4">
+                    <span class="text-3xl font-bold text-blue-500">2</span>
+                    <a href="https://techcrunch.com/2026/03/30/popular-ai-gateway-startup-litellm-ditches-controversial-startup-delve/" target="_blank" class="text-blue-500 hover:text-blue-400 text-sm">TechCrunch →</a>
+                </div>
+                <h3 class="text-xl font-bold mb-4 text-slate-900 dark:text-white">AI网关初创企业LiteLLM放弃争议合作方Delve</h3>
+                <p class="text-slate-600 dark:text-slate-300 leading-relaxed mb-4">热门AI网关初创公司LiteLLM终止了与存在争议的安全合规初创公司Delve的合作。LiteLLM此前通过Delve获得了两个安全合规认证，但上周遭遇了严重的凭证窃取恶意软件攻击。此事件再次暴露了AI基础设施供应链的安全风险。</p>
+                <div class="text-sm text-slate-500 dark:text-slate-400">原文: Popular AI gateway startup LiteLLM ditches controversial startup Delve</div>
+            </article>
+
+            <article class="bg-white dark:bg-slate-800/50 rounded-2xl p-8 border border-slate-200 dark:border-slate-700/50">
+                <div class="flex items-start justify-between gap-4 mb-4">
+                    <span class="text-3xl font-bold text-blue-500">3</span>
+                    <a href="https://techcrunch.com/2026/03/30/ai-trust-adoption-poll-more-americans-adopt-tools-fewer-say-they-can-trust-the-results/" target="_blank" class="text-blue-500 hover:text-blue-400 text-sm">TechCrunch →</a>
+                </div>
+                <h3 class="text-xl font-bold mb-4 text-slate-900 dark:text-white">AI采用上升但信任下降：民调揭示公众矛盾心态</h3>
+                <p class="text-slate-600 dark:text-slate-300 leading-relaxed mb-4">Quinnipiac最新民调显示，尽管更多美国人开始使用AI工具，但愿意信任AI结果的人数却在减少。大多数美国民众对AI的透明度、监管以及更广泛的社会影响感到担忧。这种"采用但不信任"的矛盾心态，将成为AI行业必须面对的核心挑战。</p>
+                <div class="text-sm text-slate-500 dark:text-slate-400">原文: As more Americans adopt AI tools, fewer say they can trust the results</div>
+            </article>
+
+            <article class="bg-white dark:bg-slate-800/50 rounded-2xl p-8 border border-slate-200 dark:border-slate-700/50">
+                <div class="flex items-start justify-between gap-4 mb-4">
+                    <span class="text-3xl font-bold text-blue-500">4</span>
+                    <a href="https://openai.com/index/helping-disaster-response-teams-asia" target="_blank" class="text-blue-500 hover:text-blue-400 text-sm">OpenAI →</a>
+                </div>
+                <h3 class="text-xl font-bold mb-4 text-slate-900 dark:text-white">OpenAI携手比尔盖茨基金会帮助亚洲灾害响应团队</h3>
+                <p class="text-slate-600 dark:text-slate-300 leading-relaxed mb-4">OpenAI在亚洲开展AI灾害响应工作坊，与盖茨基金会合作帮助救援团队将AI转化为实际行动。这一项目展示了AI在人道主义领域的应用潜力，也是科技巨头履行社会责任的典型案例。</p>
+                <div class="text-sm text-slate-500 dark:text-slate-400">原文: Helping disaster response teams turn AI into action across Asia</div>
+            </article>
+
+            <article class="bg-white dark:bg-slate-800/50 rounded-2xl p-8 border border-slate-200 dark:border-slate-700/50">
+                <div class="flex items-start justify-between gap-4 mb-4">
+                    <span class="text-3xl font-bold text-blue-500">5</span>
+                    <a href="https://blog.google/company-news/inside-google/around-the-globe/google-europe/united-kingdom/googles-ai-works-for-britain-aims-to-help-stuck-brits-unlock-progression/" target="_blank" class="text-blue-500 hover:text-blue-400 text-sm">Google →</a>
+                </div>
+                <h3 class="text-xl font-bold mb-4 text-slate-900 dark:text-white">谷歌"AI Works for Britain"帮助停滞的英国人突破职业发展</h3>
+                <p class="text-slate-600 dark:text-slate-300 leading-relaxed mb-4">谷歌推出"AI Works for Britain"计划，旨在帮助陷入职业停滞的英国人利用AI技术突破发展瓶颈。该计划是谷歌在欧洲AI赋能战略的重要组成部分，反映了科技巨头对AI技能普惠的重视。</p>
+                <div class="text-sm text-slate-500 dark:text-slate-400">原文: Google's 'AI Works for Britain' aims to help stuck Brits unlock progression</div>
+            </article>
+
+            <article class="bg-white dark:bg-slate-800/50 rounded-2xl p-8 border border-slate-200 dark:border-slate-700/50">
+                <div class="flex items-start justify-between gap-4 mb-4">
+                    <span class="text-3xl font-bold text-blue-500">6</span>
+                    <a href="https://blog.google/products-and-platforms/products/maps/google-maps-simplifies-battery-predictions-and-trip-planning-for-350-android-auto-ev-models/" target="_blank" class="text-blue-500 hover:text-blue-400 text-sm">Google →</a>
+                </div>
+                <h3 class="text-xl font-bold mb-4 text-slate-900 dark:text-white">Google地图简化350+款Android Auto电动车电池预测和行程规划</h3>
+                <p class="text-slate-600 dark:text-slate-300 leading-relaxed mb-4">Google地图为超过350款Android Auto电动车简化了电池预测和行程规划功能。这一更新将AI驱动的续航估算与充电站导航深度整合，进一步推动了智能出行体验的普惠化。</p>
+                <div class="text-sm text-slate-500 dark:text-slate-400">原文: Google Maps simplifies battery predictions and trip planning for 350+ Android Auto EV models</div>
+            </article>
+
+        </section>
+
+        <footer class="mt-16 pt-8 border-t border-slate-200 dark:border-slate-800 text-center text-slate-500 dark:text-slate-400 text-sm">
+            <p>由 AI 自动整理 · 每天北京时间 7:00 更新</p>
+        </footer>
+    </div>
+    <script>
+        document.getElementById('theme-toggle').addEventListener('click', function(){
+            if(document.documentElement.classList.contains('dark')){
+                document.documentElement.classList.remove('dark');
+                localStorage.theme = 'light';
+            }else{
+                document.documentElement.classList.add('dark');
+                localStorage.theme = 'dark';
+            }
+        });
+    </script>
+</body>
+</html>
