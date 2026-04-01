@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI 科技简报 | 2026年4月1日</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = { darkMode: 'class' }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>body{font-family:'Noto Sans SC',sans-serif}</style>
+    <script>
+        (function(){
+            var t = localStorage.theme;
+            if(t === 'dark' || (!t && window.matchMedia('(prefers-color-scheme:dark)').matches)){
+                document.documentElement.classList.add('dark');
+            }
+        })();
+    </script>
+</head>
+<body class="bg-gradient-to-br from-slate-50 via-slate-100 to-slate-200 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900 min-h-screen text-slate-900 dark:text-white transition-colors duration-300">
+    <div class="max-w-4xl mx-auto px-6 py-12">
+        <header class="text-center mb-16">
+            <div class="flex justify-between items-center mb-8">
+                <a href="/" class="text-blue-500 hover:text-blue-400 text-sm">← 返回首页</a>
+                <button id="theme-toggle" type="button" class="p-2 rounded-full bg-slate-200 dark:bg-slate-700 hover:bg-slate-300 dark:hover:bg-slate-600 transition-colors">
+                    <svg class="w-5 h-5 text-amber-500 dark:block hidden" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"/></svg>
+                    <svg class="w-5 h-5 text-slate-600 dark:hidden block" fill="currentColor" viewBox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"/></svg>
+                </button>
+            </div>
+            <div class="inline-flex items-center gap-2 bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 px-4 py-2 rounded-full text-sm mb-6">
+                <span class="w-2 h-2 bg-blue-500 rounded-full animate-pulse"></span>
+                每日 AI 科技简报
+            </div>
+            <h1 class="text-4xl font-bold mb-4 text-slate-900 dark:text-white">2026年4月1日</h1>
+        </header>
+
+        <section class="space-y-8">
+            <div class="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800 rounded-2xl p-6">
+                <h3 class="text-lg font-bold text-amber-800 dark:text-amber-300 mb-3">今日洞察</h3>
+                <div class="text-amber-700 dark:text-amber-400 space-y-2">
+                    <p><strong class="text-amber-600 dark:text-amber-300">三条主线：</strong></p>
+                    <ul class="list-disc list-inside space-y-2 ml-2">
+                        <li><strong class="text-amber-600 dark:text-amber-300">AI 安全事件持续发酵</strong> — Mercor 遭网络攻击、Trivy 供应链漏洞、LLM 能大规模识别匿名用户</li>
+                        <li><strong class="text-amber-600 dark:text-amber-300">AI 估值已达 8520 亿美元新高</strong> — OpenAI 本轮融资规模创行业纪录，但公司尚未上市</li>
+                        <li><strong class="text-amber-600 dark:text-amber-300">AI 正在"占领"一切日常应用</strong> — 天气 App 全面 AI 化，Slack 引入 30+ AI 功能</li>
+                    </ul>
+                </div>
+            </div>
+
+            <article class="bg-white dark:bg-slate-800/50 rounded-2xl p-8 border border-slate-200 dark:border-slate-700/50">
+                <div class="flex items-start justify-between gap-4 mb-4">
+                    <span class="text-3xl font-bold text-blue-500">1</span>
+                    <a href="https://news.ycombinator.com/item?id=44012345" target="_blank" class="text-blue-500 hover:text-blue-400 text-sm">Hacker News →</a>
+                </div>
+                <h3 class="text-xl font-bold mb-4 text-slate-900 dark:text-white">OpenAI 完成 8520 亿美元估值融资</h3>
+                <p class="text-slate-600 dark:text-slate-300 leading-relaxed mb-4">OpenAI 创下 AI 公司最高估值纪录，8520 亿美元已经超越大多数上市公司。但这是一家尚未上市的公司——这意味着二级市场正在为未上市的 AI 独角兽定价，风险与机遇并存。</p>
+                <div class="text-sm text-slate-500 dark:text-slate-400">原文: OpenAI closes funding round at an $852B valuation</div>
+            </article>
+
+            <article class="bg-white dark:bg-slate-800/50 rounded-2xl p-8 border border-slate-200 dark:border-slate-700/50">
+                <div class="flex items-start justify-between gap-4 mb-4">
+                    <span class="text-3xl font-bold text-blue-500">2</span>
+                    <a href="https://techcrunch.com/2026/03/31/mercor-says-it-was-hit-by-cyberattack-tied-to-compromise-of-open-source-litellm-project/" target="_blank" class="text-blue-500 hover:text-blue-400 text-sm">TechCrunch →</a>
+                </div>
+                <h3 class="text-xl font-bold mb-4 text-slate-900 dark:text-white">AI 招聘公司 Mercor 遭黑客攻击</h3>
+                <p class="text-slate-600 dark:text-slate-300 leading-relaxed mb-4">攻击与开源项目 LiteLLM 的被攻击事件相关。这提醒我们：AI 公司的安全风险不仅来自模型本身，还来自其依赖的开源供应链。</p>
+                <div class="text-sm text-slate-500 dark:text-slate-400">原文: Mercor says it was hit by cyberattack tied to compromise of open-source LiteLLM project</div>
+            </article>
+
+            <article class="bg-white dark:bg-slate-800/50 rounded-2xl p-8 border border-slate-200 dark:border-slate-700/50">
+                <div class="flex items-start justify-between gap-4 mb-4">
+                    <span class="text-3xl font-bold text-blue-500">3</span>
+                    <a href="https://www.wired.com/story/ai-has-flooded-all-the-weather-apps/" target="_blank" class="text-blue-500 hover:text-blue-400 text-sm">Wired →</a>
+                </div>
+                <h3 class="text-xl font-bold mb-4 text-slate-900 dark:text-white">AI 洪水般涌入所有天气应用</h3>
+                <p class="text-slate-600 dark:text-slate-300 leading-relaxed mb-4">天气 App 正在全面 AI 化。这不是简单的"加个 AI 聊天框"，而是重新定义用户获取天气信息的方式。从被动查看变成主动交互，这是 AI 入侵消费应用的缩影。</p>
+                <div class="text-sm text-slate-500 dark:text-slate-400">原文: AI Has Flooded All the Weather Apps</div>
+            </article>
+
+            <article class="bg-white dark:bg-slate-800/50 rounded-2xl p-8 border border-slate-200 dark:border-slate-700/50">
+                <div class="flex items-start justify-between gap-4 mb-4">
+                    <span class="text-3xl font-bold text-blue-500">4</span>
+                    <a href="https://techcrunch.com/2026/03/31/salesforce-announces-an-ai-heavy-makeover-for-slack-with-30-new-features/" target="_blank" class="text-blue-500 hover:text-blue-400 text-sm">TechCrunch →</a>
+                </div>
+                <h3 class="text-xl font-bold mb-4 text-slate-900 dark:text-white">Slack 迎来 AI 全面升级：30+ 新功能</h3>
+                <p class="text-slate-600 dark:text-slate-300 leading-relaxed mb-4">Salesforce 正在把 Slack 变成下一个 AI 工作平台。30 个新功能不只是"智能回复"，而是深度整合到工作流中。企业在协作工具上的 AI 竞争正在升温。</p>
+                <div class="text-sm text-slate-500 dark:text-slate-400">原文: Salesforce announces an AI-heavy makeover for Slack, with 30 new features</div>
+            </article>
+
+            <article class="bg-white dark:bg-slate-800/50 rounded-2xl p-8 border border-slate-200 dark:border-slate-700/50">
+                <div class="flex items-start justify-between gap-4 mb-4">
+                    <span class="text-3xl font-bold text-blue-500">5</span>
+                    <a href="https://arstechnica.com/security/2026/03/llms-can-unmask-pseudonymous-users-at-scale-with-surprising-accuracy/" target="_blank" class="text-blue-500 hover:text-blue-400 text-sm">Ars Technica →</a>
+                </div>
+                <h3 class="text-xl font-bold mb-4 text-slate-900 dark:text-white">LLM 能大规模识别匿名用户</h3>
+                <p class="text-slate-600 dark:text-slate-300 leading-relaxed mb-4">研究显示 LLM 能够通过写作风格识别匿名用户。这对隐私是巨大挑战——你以为用匿名 ID 发帖就安全了？AI 可能有不同看法。</p>
+                <div class="text-sm text-slate-500 dark:text-slate-400">原文: LLMs can unmask pseudonymous users at scale with surprising accuracy</div>
+            </article>
+
+            <article class="bg-white dark:bg-slate-800/50 rounded-2xl p-8 border border-slate-200 dark:border-slate-700/50">
+                <div class="flex items-start justify-between gap-4 mb-4">
+                    <span class="text-3xl font-bold text-blue-500">6</span>
+                    <a href="https://techcrunch.com/2026/03/30/why-openai-really-shut-down-sora/" target="_blank" class="text-blue-500 hover:text-blue-400 text-sm">TechCrunch →</a>
+                </div>
+                <h3 class="text-xl font-bold mb-4 text-slate-900 dark:text-white">OpenAI 为什么要关闭 Sora？</h3>
+                <p class="text-slate-600 dark:text-slate-300 leading-relaxed mb-4">Sora 关闭背后的真正原因不是技术不成熟，而是商业考量。OpenAI 选择聚焦核心业务，这可能是 AI 视频赛道降温的信号。</p>
+                <div class="text-sm text-slate-500 dark:text-slate-400">原文: Why OpenAI really shut down Sora</div>
+            </article>
+        </section>
+
+        <footer class="mt-16 pt-8 border-t border-slate-200 dark:border-slate-800 text-center text-slate-500 dark:text-slate-400 text-sm">
+            <p>由 AI 自动整理 · 每天北京时间 7:00 更新</p>
+        </footer>
+    </div>
+    <script>
+        document.getElementById('theme-toggle').addEventListener('click', function(){
+            if(document.documentElement.classList.contains('dark')){
+                document.documentElement.classList.remove('dark');
+                localStorage.theme = 'light';
+            }else{
+                document.documentElement.classList.add('dark');
+                localStorage.theme = 'dark';
+            }
+        });
+    </script>
+</body>
+</html>
